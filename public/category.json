@@ -1,0 +1,51 @@
+[
+    {
+    "id":1,
+    "name":"Áo thun"
+    },
+
+    {
+    "id":2,
+    "name":"Áo sơ mi"
+    },
+
+    {
+    "id":3,
+    "name":"Quần"
+    },
+
+    {
+    "id":4,
+    "name":"Váy / đầm"
+    },
+
+     {
+    "id":5,
+    "name":"Áo khoác"
+    },
+    
+     {
+    "id":6,
+    "name":"Giày thể thao"
+    },
+    
+     {
+    "id":7,
+    "name":"Túi xách"
+    },
+    
+     {
+    "id":8,
+    "name":"Thắt lưngs"
+    },
+    
+     {
+    "id":9,
+    "name":"Kính mát"
+    },
+    
+     {
+    "id":10,
+    "name":"Mũ / nón "
+    }    
+]

@@ -1,73 +1,90 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './Footer.css';
-import logoImage from '../../img/logo.png';
+import logo from '../../img/logo.png';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
-    const navigate = useNavigate();
+  return (
+    <footer className="highlands-footer">
+      <div className="footer-green-strip"></div>
+      <div className="footer-content">
+        <div className="footer-left">
+          <div className="footer-logo">
+            <img src={logo} alt="Highlands Coffee" className="footer-logo-img" />
+          </div>
+          <p className="footer-copyright">
+            ©2025 SaleMini. All rights reserved
+          </p>
+        </div>
 
-    return (
-        <footer className="phuclong-footer">
-            <div className="footer-container">
-                
-                <div className="footer-column company-info">
-                    <img src={logoImage} alt="Phuc Long Logo" className="footer-logo" />
-                    <p className="company-name">Trụ sở chính: Công ty Cổ Phần Phúc Long Heritage</p>
-                    <p>Địa chỉ: 42/24 - 42/26 Đường 643 Tạ Quang Bửu, P.4, Q.8, TP.HCM</p>
-                    <p>Điện thoại: 028 6263 0377 - 6263 0378</p>
-                    <p>Email: info2@phuclong.com.vn</p>
-                </div>
+        <div className="footer-middle">
+          <div className="footer-column">
+            <h3 className="footer-column-title">VỀ SaleMini</h3>
+            <ul className="footer-links">
+              <li><a href="/origin">Nguồn gốc</a></li>
+              <li><a href="/services">Dịch vụ</a></li>
+              <li><a href="/careers">Nghề Nghiệp</a></li>
+              <li><a href="/contact">Liên hệ</a></li>
+            </ul>
+          </div>
 
-                <div className="footer-column">
-                    <h3 className="footer-heading">VỀ CHÚNG TÔI</h3>
-                    <ul className="footer-links">
-                        <li><a href="/about">Tầm nhìn & Sứ mệnh</a></li>
-                        <li><a href="/career">Cơ hội nghề nghiệp</a></li>
-                        <li><a href="/promotions">Tin tức & Khuyến mãi</a></li>
-                        <li><a href="/stores">Hệ thống cửa hàng</a></li>
-                    </ul>
-                </div>
+          <div className="footer-column">
+            <h3 className="footer-column-title">HỆ THỐNG CỬA HÀNG</h3>
+            <ul className="footer-links">
+              <li><a href="/find-store">Tìm cửa hàng gần nhất</a></li>
+            </ul>
+          </div>
 
-            
-                <div className="footer-column">
-                    <h3 className="footer-heading">CHÍNH SÁCH</h3>
-                    <ul className="footer-links">
-                        <li><a href="/policy">Chính sách bảo mật</a></li>
-                        <li><a href="/terms">Điều khoản sử dụng</a></li>
-                        <li><a href="/delivery-policy">Chính sách giao hàng</a></li>
-                    </ul>
-                </div>
+          <div className="footer-column">
+            <h3 className="footer-column-title">TIN TỨC</h3>
+            <ul className="footer-links">
+            </ul>
+          </div>
+        </div>
 
-             
-                <div className="footer-column">
-                    <h3 className="footer-heading">THEO DÕI CHÚNG TÔI</h3>
-                    <div className="social-icons">
-                        <a href="https://facebook.com" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com" className="social-icon"><i className="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com" className="social-icon"><i className="fab fa-youtube"></i></a>
-                        <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    </div>
-                    <div className="newsletter">
-                        <p>Đăng ký nhận tin từ Phúc Long</p>
-                        <div className="subscribe-box">
-                            <input type="email" placeholder="Email của bạn..." />
-                            <button className="subscribe-btn"><i className="fas fa-paper-plane"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="footer-right">
+          <h3 className="footer-column-title">THEO DÕI CHÚNG TÔI</h3>
+          <div className="footer-social-icons">
+            <a href="https://facebook.com" className="social-icon" aria-label="Facebook">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" className="social-icon" aria-label="Instagram">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" className="social-icon" aria-label="YouTube">
+              <i className="fab fa-youtube"></i>
+            </a>
+            <a href="https://tiktok.com" className="social-icon" aria-label="TikTok">
+              <i className="fab fa-tiktok"></i>
+            </a>
+          </div>
 
-           
-            <div className="footer-bottom">
-                <div className="footer-bottom-content">
-                    <span>© 2024 Phuc Long Heritage. All rights reserved.</span>
-                    <div className="footer-bottom-links">
-                        <span>VN</span> | <span>EN</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+          <div className="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4241674621!2d106.63189221474899!3d10.779169092319943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzQ1LjAiTiAxMDbCsDM4JzAyLjgiRQ!5e0!3m2!1svi!2svn!4v1610000000000!5m2!1svi!2svn"
+              title="Bản đồ địa điểm Galaxy Cafe"
+              className="footer-map_iframe"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            ></iframe>        
+                <a
+              className="footer-map_link"
+              href="https://goo.gl/maps/example"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mở trong Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-chat-icon" title="Chat với chúng tôi">
+        <i className="fas fa-comment-dots"></i>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Văn Minh",
+    "position": "Quản lý cửa hàng",
+    "phone": "0901111111",
+    "email": "minh.nguyen@shop.com"
+  },
+  {
+    "id": 2,
+    "name": "Trần Thị Lan",
+    "position": "Nhân viên bán hàng",
+    "phone": "0902222222",
+    "email": "lan.tran@shop.com"
+  },
+  {
+    "id": 3,
+    "name": "Lê Hoàng Phúc",
+    "position": "Nhân viên kho",
+    "phone": "0903333333",
+    "email": "phuc.le@shop.com"
+  },
+  {
+    "id": 4,
+    "name": "Phạm Thu Trang",
+    "position": "Chăm sóc khách hàng",
+    "phone": "0904444444",
+    "email": "trang.pham@shop.com"
+  },
+  {
+    "id": 5,
+    "name": "Võ Minh Quân",
+    "position": "Nhân viên giao hàng",
+    "phone": "0905555555",
+    "email": "quan.vo@shop.com"
+  },
+  {
+    "id": 6,
+    "name": "Đặng Thanh Hùng",
+    "position": "Nhân viên bán hàng",
+    "phone": "0906666666",
+    "email": "hung.dang@shop.com"
+  },
+  {
+    "id": 7,
+    "name": "Bùi Ngọc Anh",
+    "position": "Nhân viên marketing",
+    "phone": "0907777777",
+    "email": "anh.bui@shop.com"
+  },
+  {
+    "id": 8,
+    "name": "Hoàng Thị Mai",
+    "position": "Nhân viên thu ngân",
+    "phone": "0908888888",
+    "email": "mai.hoang@shop.com"
+  },
+  {
+    "id": 9,
+    "name": "Phan Quốc Bảo",
+    "position": "Nhân viên kho",
+    "phone": "0909999999",
+    "email": "bao.phan@shop.com"
+  },
+  {
+    "id": 10,
+    "name": "Lý Thị Hạnh",
+    "position": "Nhân viên bán hàng",
+    "phone": "0910000000",
+    "email": "hanh.ly@shop.com"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Cà phê sữa",
+    "imageKey": "sp1",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "discount": "-13,75%",
+    "rating": "5",
+    "sold": "5,9k" 
+  },
+  {
+    "id": 2,
+    "name": "Freeze Trà Xanh",
+    "imageKey": "sp2",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "discount": "-8%",
+    "rating": "5",
+    "sold": "117"
+  },
+  {
+    "id": 3,
+    "name": "Cookies & Cream",
+    "imageKey": "sp3",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "rating": "4.9",
+    "sold": "27k"
+  },
+  {
+    "id": 4,
+    "name": "Cookies & Cream",
+    "imageKey": "sp3",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "rating": "4.9",
+    "sold": "27k"
+  },
+  {
+    "id": 5,
+    "name": "Cookies & Cream",
+    "imageKey": "sp3",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "rating": "4.9",
+    "sold": "27k"
+  },
+  {
+    "id": 6,
+    "name": "Cookies & Cream",
+    "imageKey": "sp3",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": "69.000₫",
+    "originalPrice": "80.000₫",
+    "rating": "4.9",
+    "sold": "27k"
+  }
+]
+

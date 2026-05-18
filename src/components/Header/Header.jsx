@@ -84,7 +84,7 @@ const Header = () => {
                     <div className="header-delivery-info">
                         <span className="delivery-text">Free Delivery</span>
                         <i className="fas fa-phone delivery-icon"></i>
-                        <span className="delivery-phone">0703514987</span>
+                        <span className="delivery-phone">1800 6779</span>
                         <div className="delivery-scooter">
                             <i className="fas fa-motorcycle"></i>
                         </div>

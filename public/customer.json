@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyễn Văn An",
+    "email": "an.nguyen@gmail.com",
+    "phone": "0901234567",
+    "address": "TP Hồ Chí Minh"
+  },
+  {
+    "id": 2,
+    "name": "Trần Thị Mai",
+    "email": "mai.tran@gmail.com",
+    "phone": "0912345678",
+    "address": "Hà Nội"
+  },
+  {
+    "id": 3,
+    "name": "Lê Hoàng Nam",
+    "email": "nam.le@gmail.com",
+    "phone": "0923456789",
+    "address": "Đà Nẵng"
+  },
+  {
+    "id": 4,
+    "name": "Phạm Minh Tuấn",
+    "email": "tuan.pham@gmail.com",
+    "phone": "0934567890",
+    "address": "Cần Thơ"
+  },
+  {
+    "id": 5,
+    "name": "Võ Thu Hà",
+    "email": "ha.vo@gmail.com",
+    "phone": "0945678901",
+    "address": "Bình Dương"
+  }
+]
