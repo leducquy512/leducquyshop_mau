@@ -5,7 +5,8 @@
     "imageKey": "sp1",
     "price": 120000,
     "currentPrice": 99000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "imageKey": "sp2",
     "price": 150000,
     "currentPrice": 129000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "imageKey": "sp3",
     "price": 160000,
     "currentPrice": 139000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "imageKey": "sp4",
     "price": 260000,
     "currentPrice": 220000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "imageKey": "sp5",
     "price": 250000,
     "currentPrice": 210000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "imageKey": "sp6",
     "price": 170000,
     "currentPrice": 145000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "imageKey": "sp7",
     "price": 180000,
     "currentPrice": 150000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "imageKey": "sp8",
     "price": 200000,
     "currentPrice": 169000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "imageKey": "sp9",
     "price": 190000,
     "currentPrice": 159000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "imageKey": "sp10",
     "price": 210000,
     "currentPrice": 179000,
-    "idcategory": 1
+    "idcategory": 1,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "imageKey": "sp11",
     "price": 220000,
     "currentPrice": 189000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "imageKey": "sp12",
     "price": 230000,
     "currentPrice": 199000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "imageKey": "sp13",
     "price": 240000,
     "currentPrice": 209000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "imageKey": "sp14",
     "price": 280000,
     "currentPrice": 249000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "imageKey": "sp15",
     "price": 210000,
     "currentPrice": 179000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "imageKey": "sp16",
     "price": 260000,
     "currentPrice": 229000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "imageKey": "sp17",
     "price": 270000,
     "currentPrice": 239000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "imageKey": "sp18",
     "price": 235000,
     "currentPrice": 195000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "imageKey": "sp19",
     "price": 245000,
     "currentPrice": 205000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "imageKey": "sp20",
     "price": 290000,
     "currentPrice": 259000,
-    "idcategory": 2
+    "idcategory": 2,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "imageKey": "sp21",
     "price": 350000,
     "currentPrice": 299000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "imageKey": "sp22",
     "price": 340000,
     "currentPrice": 289000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "imageKey": "sp23",
     "price": 360000,
     "currentPrice": 319000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "imageKey": "sp24",
     "price": 210000,
     "currentPrice": 179000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "imageKey": "sp25",
     "price": 320000,
     "currentPrice": 279000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "imageKey": "sp26",
     "price": 310000,
     "currentPrice": 269000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "imageKey": "sp27",
     "price": 290000,
     "currentPrice": 249000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "imageKey": "sp28",
     "price": 270000,
     "currentPrice": 229000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "imageKey": "sp29",
     "price": 310000,
     "currentPrice": 269000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 30,
@@ -237,7 +266,8 @@
     "imageKey": "sp30",
     "price": 330000,
     "currentPrice": 289000,
-    "idcategory": 3
+    "idcategory": 3,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 31,
@@ -245,7 +275,8 @@
     "imageKey": "sp31",
     "price": 320000,
     "currentPrice": 279000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 32,
@@ -253,7 +284,8 @@
     "imageKey": "sp32",
     "price": 350000,
     "currentPrice": 299000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 33,
@@ -261,7 +293,8 @@
     "imageKey": "sp33",
     "price": 330000,
     "currentPrice": 289000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 34,
@@ -269,7 +302,8 @@
     "imageKey": "sp34",
     "price": 450000,
     "currentPrice": 399000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 35,
@@ -277,7 +311,8 @@
     "imageKey": "sp35",
     "price": 280000,
     "currentPrice": 249000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 36,
@@ -285,7 +320,8 @@
     "imageKey": "sp36",
     "price": 420000,
     "currentPrice": 379000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 37,
@@ -293,7 +329,8 @@
     "imageKey": "sp37",
     "price": 390000,
     "currentPrice": 349000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 38,
@@ -301,7 +338,8 @@
     "imageKey": "sp38",
     "price": 290000,
     "currentPrice": 249000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 39,
@@ -309,7 +347,8 @@
     "imageKey": "sp39",
     "price": 310000,
     "currentPrice": 269000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 40,
@@ -317,7 +356,8 @@
     "imageKey": "sp40",
     "price": 370000,
     "currentPrice": 329000,
-    "idcategory": 4
+    "idcategory": 4,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 41,
@@ -325,7 +365,8 @@
     "imageKey": "sp41",
     "price": 410000,
     "currentPrice": 369000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 42,
@@ -333,7 +374,8 @@
     "imageKey": "sp42",
     "price": 320000,
     "currentPrice": 279000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 43,
@@ -341,7 +383,8 @@
     "imageKey": "sp43",
     "price": 480000,
     "currentPrice": 429000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 44,
@@ -349,7 +392,8 @@
     "imageKey": "sp44",
     "price": 520000,
     "currentPrice": 469000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 45,
@@ -357,7 +401,8 @@
     "imageKey": "sp45",
     "price": 410000,
     "currentPrice": 369000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 46,
@@ -365,7 +410,8 @@
     "imageKey": "sp46",
     "price": 430000,
     "currentPrice": 389000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 47,
@@ -373,7 +419,8 @@
     "imageKey": "sp47",
     "price": 600000,
     "currentPrice": 539000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 48,
@@ -381,7 +428,8 @@
     "imageKey": "sp48",
     "price": 360000,
     "currentPrice": 319000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 49,
@@ -389,7 +437,8 @@
     "imageKey": "sp49",
     "price": 520000,
     "currentPrice": 469000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 50,
@@ -397,7 +446,8 @@
     "imageKey": "sp50",
     "price": 610000,
     "currentPrice": 549000,
-    "idcategory": 5
+    "idcategory": 5,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 51,
@@ -405,7 +455,8 @@
     "imageKey": "sp51",
     "price": 650000,
     "currentPrice": 589000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 52,
@@ -413,7 +464,8 @@
     "imageKey": "sp52",
     "price": 550000,
     "currentPrice": 499000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 53,
@@ -421,7 +473,8 @@
     "imageKey": "sp53",
     "price": 560000,
     "currentPrice": 499000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 54,
@@ -429,7 +482,8 @@
     "imageKey": "sp54",
     "price": 620000,
     "currentPrice": 559000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 55,
@@ -437,7 +491,8 @@
     "imageKey": "sp55",
     "price": 640000,
     "currentPrice": 579000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 56,
@@ -445,7 +500,8 @@
     "imageKey": "sp56",
     "price": 450000,
     "currentPrice": 399000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 57,
@@ -453,7 +509,8 @@
     "imageKey": "sp57",
     "price": 480000,
     "currentPrice": 429000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 58,
@@ -461,7 +518,8 @@
     "imageKey": "sp58",
     "price": 300000,
     "currentPrice": 269000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 59,
@@ -469,7 +527,8 @@
     "imageKey": "sp59",
     "price": 180000,
     "currentPrice": 149000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 60,
@@ -477,7 +536,8 @@
     "imageKey": "sp60",
     "price": 630000,
     "currentPrice": 569000,
-    "idcategory": 6
+    "idcategory": 6,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 61,
@@ -485,7 +545,8 @@
     "imageKey": "sp61",
     "price": 620000,
     "currentPrice": 559000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 62,
@@ -493,7 +554,8 @@
     "imageKey": "sp62",
     "price": 650000,
     "currentPrice": 589000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 63,
@@ -501,7 +563,8 @@
     "imageKey": "sp63",
     "price": 540000,
     "currentPrice": 489000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 64,
@@ -509,7 +572,8 @@
     "imageKey": "sp64",
     "price": 560000,
     "currentPrice": 499000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 65,
@@ -517,7 +581,8 @@
     "imageKey": "sp65",
     "price": 900000,
     "currentPrice": 799000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 66,
@@ -525,7 +590,8 @@
     "imageKey": "sp66",
     "price": 350000,
     "currentPrice": 319000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 67,
@@ -533,7 +599,8 @@
     "imageKey": "sp67",
     "price": 420000,
     "currentPrice": 379000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 68,
@@ -541,7 +608,8 @@
     "imageKey": "sp68",
     "price": 310000,
     "currentPrice": 279000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 69,
@@ -549,7 +617,8 @@
     "imageKey": "sp69",
     "price": 260000,
     "currentPrice": 229000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 70,
@@ -557,7 +626,8 @@
     "imageKey": "sp70",
     "price": 390000,
     "currentPrice": 349000,
-    "idcategory": 7
+    "idcategory": 7,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 71,
@@ -565,7 +635,8 @@
     "imageKey": "sp71",
     "price": 450000,
     "currentPrice": 399000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 72,
@@ -573,7 +644,8 @@
     "imageKey": "sp72",
     "price": 280000,
     "currentPrice": 249000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 73,
@@ -581,7 +653,8 @@
     "imageKey": "sp73",
     "price": 240000,
     "currentPrice": 209000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 74,
@@ -589,7 +662,8 @@
     "imageKey": "sp74",
     "price": 520000,
     "currentPrice": 469000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 75,
@@ -597,7 +671,8 @@
     "imageKey": "sp75",
     "price": 300000,
     "currentPrice": 269000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 76,
@@ -605,7 +680,8 @@
     "imageKey": "sp76",
     "price": 340000,
     "currentPrice": 299000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 77,
@@ -613,7 +689,8 @@
     "imageKey": "sp77",
     "price": 750000,
     "currentPrice": 679000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 78,
@@ -621,7 +698,8 @@
     "imageKey": "sp78",
     "price": 220000,
     "currentPrice": 189000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 79,
@@ -629,7 +707,8 @@
     "imageKey": "sp79",
     "price": 200000,
     "currentPrice": 179000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 80,
@@ -637,7 +716,8 @@
     "imageKey": "sp80",
     "price": 230000,
     "currentPrice": 199000,
-    "idcategory": 8
+    "idcategory": 8,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 81,
@@ -645,7 +725,8 @@
     "imageKey": "sp81",
     "price": 210000,
     "currentPrice": 189000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 82,
@@ -653,7 +734,8 @@
     "imageKey": "sp82",
     "price": 260000,
     "currentPrice": 229000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 83,
@@ -661,7 +743,8 @@
     "imageKey": "sp83",
     "price": 190000,
     "currentPrice": 169000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 84,
@@ -669,7 +752,8 @@
     "imageKey": "sp84",
     "price": 210000,
     "currentPrice": 189000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 85,
@@ -677,7 +761,8 @@
     "imageKey": "sp85",
     "price": 200000,
     "currentPrice": 179000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 86,
@@ -685,7 +770,8 @@
     "imageKey": "sp86",
     "price": 260000,
     "currentPrice": 229000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 87,
@@ -693,7 +779,8 @@
     "imageKey": "sp87",
     "price": 270000,
     "currentPrice": 239000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 88,
@@ -701,7 +788,8 @@
     "imageKey": "sp88",
     "price": 290000,
     "currentPrice": 259000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 89,
@@ -709,7 +797,8 @@
     "imageKey": "sp89",
     "price": 250000,
     "currentPrice": 219000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 90,
@@ -717,7 +806,8 @@
     "imageKey": "sp90",
     "price": 270000,
     "currentPrice": 239000,
-    "idcategory": 9
+    "idcategory": 9,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 91,
@@ -725,7 +815,8 @@
     "imageKey": "sp91",
     "price": 260000,
     "currentPrice": 229000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 92,
@@ -733,7 +824,8 @@
     "imageKey": "sp92",
     "price": 300000,
     "currentPrice": 269000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 93,
@@ -741,7 +833,8 @@
     "imageKey": "sp93",
     "price": 280000,
     "currentPrice": 249000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 94,
@@ -749,7 +842,8 @@
     "imageKey": "sp94",
     "price": 150000,
     "currentPrice": 129000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 95,
@@ -757,7 +851,8 @@
     "imageKey": "sp95",
     "price": 170000,
     "currentPrice": 149000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 96,
@@ -765,7 +860,8 @@
     "imageKey": "sp96",
     "price": 140000,
     "currentPrice": 119000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 97,
@@ -773,7 +869,8 @@
     "imageKey": "sp97",
     "price": 190000,
     "currentPrice": 169000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 98,
@@ -781,7 +878,8 @@
     "imageKey": "sp98",
     "price": 160000,
     "currentPrice": 139000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 99,
@@ -789,7 +887,8 @@
     "imageKey": "sp99",
     "price": 180000,
     "currentPrice": 159000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": 100,
@@ -797,6 +896,7 @@
     "imageKey": "sp100",
     "price": 210000,
     "currentPrice": 189000,
-    "idcategory": 10
+    "idcategory": 10,
+    "sizes": ["S", "M", "L"]
   }
 ]

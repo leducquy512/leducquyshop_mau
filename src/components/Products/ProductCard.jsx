@@ -43,11 +43,11 @@ const ProductCard = ({ product }) => {
         />
       </div>
       <h3 className="product-name">{product.name}</h3>
-      <div className="product-ram-ssd">
-        <button className="ram-ssd-tag">{product.sizeS}</button>
-        <button className="ram-ssd-tag">{product.sizeM}</button>
-        <button className="ram-ssd-tag">{product.sizeL}</button>
-      </div>
+     <div className="product-ram-ssd">
+  {product.sizes?.includes('S') && <button className="ram-ssd-tag">S</button>}
+  {product.sizes?.includes('M') && <button className="ram-ssd-tag">M</button>}
+  {product.sizes?.includes('L') && <button className="ram-ssd-tag">L</button>}
+</div>
       <div className="product-pricing">
         <div className="current-price">{product.price?.toLocaleString('vi-VN')} đ</div>
         <div className="original-price-section">
