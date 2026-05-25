@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import logoImage from '../../img/logo.png'; // Giữ nguyên đường dẫn logo của bạn
+import { imageMap } from '../../utils/ProductImages';
 
 const jsonBase = import.meta.env.BASE_URL || '/';
 
@@ -89,8 +90,12 @@ const Header = () => {
                 const data = await res.json();
                 if (cancelled) return;
                 
-                // Giữ nguyên đường dẫn ảnh gốc trong file JSON của bạn, không qua hàm map của thầy nữa
-                setProducts(data);
+                // Map imageKey thành đường dẫn ảnh thực từ imageMap
+                const mappedProducts = data.map((item) => ({
+                    ...item,
+                    image: imageMap[item.imageKey] || item.image
+                }));
+                setProducts(mappedProducts);
             } catch (err) {
                 console.error('Lỗi tải sản phẩm cho tìm kiếm:', err);
             }
