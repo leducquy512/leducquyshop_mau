@@ -4,9 +4,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import DetailProduct from './components/Products/DetailProduct';
 import ProductList from "./components/Products/ProductList";
-// Đã xóa import ProductCard không sử dụng
 import Cart from "./components/Pages/Cart";
-import Login from "./components/Pages/Login";
+import LogIn from "./components/Pages/LogIn";
 import Profile from "./components/Pages/Profile";
 import Signup from "./components/Pages/Signup";
 import Admin from './components/Pages/Admin';
@@ -25,7 +24,7 @@ function App() {
         <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<DetailProduct />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin" element={<Admin />} />
