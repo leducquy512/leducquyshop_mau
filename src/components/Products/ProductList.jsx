@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import { imageMap } from '../../utils/productImages';
+import { imageMap } from '../../utils/ProductImages';
 import './ProductList.css';
 
 const PRODUCTS_PER_PAGE = 6;
@@ -43,10 +43,9 @@ const ProductList = () => {
         loadData();
     }, []);
     const filteredProducts =
-
-        selectedCategoryId == null
-            ? products
-            : products.filter((p) => p.categoryId === selectedCategoryId);
+    selectedCategoryId == null
+        ? products
+        : products.filter((p) => p.idcategory === selectedCategoryId);
 
     const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
 

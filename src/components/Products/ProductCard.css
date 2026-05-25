@@ -1,65 +1,116 @@
 .product-card{
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    background-color: rgba(38,46,54,0.82);
+
+    border: 1px solid rgba(211,209,206,0.08);
+
+    border-radius: 12px;
+
     padding: 0;
+
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s, tranform 0.3s;
+
+    transition:
+      box-shadow 0.3s,
+      transform 0.3s,
+      border-color 0.3s;
+
     overflow: hidden;
+
     height: 100%;
+
     align-items: stretch;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+      0 8px 24px rgba(0,0,0,0.22);
 }
 
 .product-card:hover{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
+    box-shadow:
+      0 14px 30px rgba(0, 0, 0, 0.35);
+
+    border-color:
+      rgba(211,209,206,0.14);
+
+    transform: translateY(-3px);
 }
 
 .product-top-banner{
-    background-color: #f5f5f5;
+    background-color: #090F15;
+
     padding: 8px 12px;
+
     font-size: 12px;
-    color: #333;
+
+    color: #B3B7BA;
+
     text-align: center;
-    border-bottom: 1px solid #e0e0e0;
+
+    border-bottom:
+      1px solid rgba(211,209,206,0.06);
 }
 
 .product-image-container{
     padding: 15px;
+
     text-align: center;
-    background-color: #fafafa;
+
+    background-color: #1A222A;
+
     min-height: 200px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border-bottom:
+      1px solid rgba(211,209,206,0.04);
 }
 
 .product-image{
     width: 100%;
     max-width: 250px;
+
     height: auto;
+
     min-height: 200px;
+
     object-fit: contain;
 }
 
 .product-badge-section {
     padding: 0 15px;
+
     margin-bottom: 10px;
+
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 .product-badge {
-    background-color: #0066cc;
-    color: white;
+    background:
+      linear-gradient(
+        135deg,
+        #B3B7BA 0%,
+        #D3D1CE 100%
+      );
+
+    color: #090F15;
+
     padding: 4px 8px;
+
     border-radius: 12px;
+
     font-size: 11px;
+
     display: inline-block;
+
     width: fit-content;
-    font-weight: 500;
+
+    font-weight: 600;
 }
 
 .product-spec-tags {
@@ -69,46 +120,75 @@
 }
 
 .spec-tag {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color:
+      rgba(211,209,206,0.06);
+
+    color: #B3B7BA;
+
     padding: 4px 10px;
-    border-radius: 4px;
+
+    border-radius: 6px;
+
     font-size: 12px;
+
     font-weight: 500;
+
+    border:
+      1px solid rgba(211,209,206,0.08);
 }
 
 .product-name{
     font-size: 32px;
+
     font-weight: 700;
-    color: #0066cc;
+
+    color: #D3D1CE;
+
     margin: 0 15px 19px 15px;
+
     line-height: 1.4;
+
     min-height: 56px;
+
     display: flex;
+
     align-items: flex-start;
 }
 
 .product-ram-ssd{
     display: flex;
     gap: 8px;
+
     padding: 0 15px;
+
     margin-bottom: 12px;
 }
 
 .ram-ssd-tag{
-    background: linear-gradient(135deg, #fdf3e7 0%, #ffe9d6 100%);
-    color: #d35400;
+    background:
+      rgba(211,209,206,0.06);
+
+    color: #D3D1CE;
+
     padding: 6px 12px;
+
     border-radius: 6px;
+
     font-size: 14px;
+
     font-weight: 600;
-    border: 1px solid #ffc38b;
+
+    border:
+      1px solid rgba(211,209,206,0.10);
 }
 
 .product-pricing{
     padding: 0 15px;
+
     margin-bottom: 10px;
+
     min-height: 50px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -116,8 +196,11 @@
 
 .current-price {
     font-size: 20px;
+
     font-weight: bold;
-    color: #e53935;
+
+    color: #D3D1CE;
+
     margin-bottom: 4px;
 }
 
@@ -129,30 +212,43 @@
 
 .original-price {
     font-size: 14px;
-    color: #999;
+
+    color: #6C6D74;
+
     text-decoration: line-through;
 }
 
 .discount {
     font-size: 12px;
-    color: #e53935;
+
+    color: #B3B7BA;
+
     font-weight: 500;
 }
 
 .product-gift {
     padding: 0 15px;
+
     margin-bottom: 12px;
+
     font-size: 13px;
-    color: #0066cc;
+
+    color: #B3B7BA;
+
     font-weight: 500;
 }
 
 .product-specs {
     padding: 0 15px;
+
     margin: 0 0 15px 0;
+
     list-style: none;
+
     font-size: 12px;
-    color: #666;
+
+    color: #B3B7BA;
+
     line-height: 1.8;
 }
 
@@ -161,54 +257,90 @@
 }
 
 .product-specs strong {
-    color: #333;
+    color: #D3D1CE;
+
     font-weight: 600;
 }
 
 .product-rating-sales {
     padding: 0 15px;
+
     margin-bottom: 15px;
+
     display: flex;
     align-items: center;
     gap: 15px;
+
     font-size: 13px;
 }
 
 .rating {
-    color: #f57c00;
+    color: #D3D1CE;
+
     font-weight: 500;
 }
 
 .sales {
-    color: #666;
+    color: #6C6D74;
 }
 
 .compare-button {
     margin: auto 15px 15px 15px;
+
     margin-top: auto;
+
     padding: 10px;
-    background-color: #0066cc;
-    color: white;
+
+    background:
+      linear-gradient(
+        135deg,
+        #B3B7BA 0%,
+        #D3D1CE 100%
+      );
+
+    color: #090F15;
+
     border: none;
-    border-radius: 4px;
+
+    border-radius: 8px;
+
     font-size: 13px;
-    font-weight: 500;
+
+    font-weight: 700;
+
     cursor: pointer;
-    transition: background-color 0.3s;
+
+    transition:
+      background-color 0.3s,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    box-shadow:
+      0 4px 14px rgba(179,183,186,0.14);
 }
 
 .compare-button:hover {
-    background-color: #0052a3;
+    transform: translateY(-1px);
+
+    box-shadow:
+      0 6px 18px rgba(179,183,186,0.18);
 }
 
 .compare-button:disabled {
-    background-color: #94a3b8;
+    background: #6C6D74;
+
+    color: #D3D1CE;
+
     cursor: not-allowed;
+
+    box-shadow: none;
 }
 
 .error-text {
     margin: 8px 15px 12px;
-    color: #e53935;
+
+    color: #B3B7BA;
+
     font-size: 13px;
 }
 
@@ -216,12 +348,16 @@
     .product-image {
         max-width: 200px;
     }
+
     .current-price {
         font-size: 18px;
     }
+
     .product-name {
         font-size: 18px;
+
         min-height: 35px;
-        color: #0066cc;
+
+        color: #D3D1CE;
     }
 }

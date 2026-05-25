@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {imageMap} from '../../utils/productImages';
+import {imageMap} from '../../utils/ProductImages';
 import './Cart.css';
 
 const Cart = () => {

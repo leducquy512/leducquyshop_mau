@@ -6,90 +6,137 @@
 }
 
 .profile-card {
-    background: #fff;
-    border: 1px solid #e8e8e8;
+    background: rgba(38,46,54,0.82);
+
+    border: 1px solid rgba(211,209,206,0.08);
+
     border-radius: 12px;
+
     padding: 28px 32px;
-    box-shadow: 0 2px 12px rgba( 0, 0, 0, 0.06);
+
+    box-shadow:
+        0 2px 12px rgba(0,0,0,0.28);
+
+    backdrop-filter: blur(12px);
 }
 
 .profile-title {
     margin: 0 0 24px;
+
     font-size: 22px;
-    color: #1a472a;
+
+    color: #D3D1CE;
+
     font-weight: 700;
 }
 
 .profile-fields {
     margin: 0;
+
     display: grid;
+
     grid-template-columns: 140px 1fr;
+
     gap: 12px 20px;
+
     font-size: 14px;
 }
 
 .profile-fields dt {
     margin: 0;
-    color: #666;
+
+    color: #6C6D74;
+
     font-weight: 600;
 }
 
 .profile-fields dd {
     margin: 0;
-    color: #333;
+
+    color: #D3D1CE;
 }
 
 .profile-back {
     margin-top: 28px;
+
     padding: 10px 20px;
-    border: 2px solid #1a472a;
+
+    border: 1px solid rgba(211,209,206,0.12);
+
     border-radius: 8px;
-    background: #fff;
-    color: #1a472a;
+
+    background: rgba(211,209,206,0.04);
+
+    color: #D3D1CE;
+
     font-weight: 600;
+
     cursor: pointer;
+
     font-size: 14px;
-    transition: background-color 0.2, color 0.2s;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        border-color 0.2s;
 }
 
 .profile-back:hover {
-    background: #1a472a;
-    color: #fff;
+    background: rgba(211,209,206,0.10);
+
+    color: #ffffff;
+
+    border-color: rgba(211,209,206,0.20);
 }
 
 .profile-section {
     margin-top: 32px;
+
     padding-top: 24px;
-    border-top: 1px solid #eee;
+
+    border-top: 1px solid rgba(211,209,206,0.08);
 }
 
 .profile-section--danger {
-    border-top-color: #fecaca;
+    border-top-color: rgba(211,209,206,0.12);
 }
 
 .profile-section-title {
     margin: 0 0 14px;
+
     font-size: 16px;
+
     font-weight: 700;
-    color: #1a472a;
+
+    color: #D3D1CE;
 }
 
 .profile-section--danger .profile-section-title {
-    color: #b91c1c;
+    color: #B3B7BA;
 }
 
 .profile-danger-hint {
     margin: 0 0 14px;
+
     font-size: 13px;
+
     line-height: 1.45;
-    color: #64748b;
+
+    color: #B3B7BA;
 }
 
 .profile-danger-hint code {
     font-size: 12px;
-    background: #f1f5f9;
+
+    background: rgba(9,15,21,0.8);
+
+    color: #D3D1CE;
+
     padding: 2px 6px;
+
     border-radius: 4px;
+
+    border: 1px solid rgba(211,209,206,0.08);
 }
 
 .profile-form {
@@ -103,54 +150,82 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+
     font-size: 13px;
+
     font-weight: 600;
-    color: #444;
+
+    color: #B3B7BA;
+
     text-align: left;
 }
 
 .profile-input {
     height: 40px;
+
     padding: 0 12px;
-    border: 1px solid #ddd;
+
+    border: 1px solid rgba(211,209,206,0.08);
+
     border-radius: 8px;
+
     font-size: 14px;
+
     outline: none;
+
     box-sizing: border-box;
+
+    background: rgba(9,15,21,0.72);
+
+    color: #D3D1CE;
 }
 
 .profile-input:focus {
-    border-color: #1a472a;
-    box-shadow: 0 0 0 2px rgba( 26, 71, 42, 0.15);
+    border-color: rgba(211,209,206,0.22);
+
+    box-shadow:
+        0 0 0 2px rgba(179,183,186,0.10);
 }
 
 .profile-msg {
     margin: 0;
+
     font-size: 13px;
 }
 
 .profile-msg--error {
-    color: #dc2626;
+    color: #B3B7BA;
 }
 
 .profile-msg--ok {
-    color: #16a34a;
+    color: #D3D1CE;
 }
 
 .profile-btn {
     margin-top: 4px;
+
     padding: 10px 18px;
+
     border-radius: 8px;
+
     font-size: 14px;
+
     font-weight: 600;
+
     cursor: pointer;
+
     border: none;
+
     align-self: flex-start;
-    transition: opacity 0.2s, transform 0.15s;
+
+    transition:
+        opacity 0.2s,
+        transform 0.15s,
+        box-shadow 0.2s;
 }
 
 .profile-btn:hover {
-    opacity: 0.95;
+    opacity: 0.96;
 }
 
 .profile-btn:active {
@@ -158,15 +233,29 @@
 }
 
 .profile-btn--primary {
-    background: #1a472a;
-    color: #fff;
+    background:
+        linear-gradient(
+            135deg,
+            #B3B7BA 0%,
+            #D3D1CE 100%
+        );
+
+    color: #090F15;
+
+    box-shadow:
+        0 4px 14px rgba(179,183,186,0.14);
 }
 
 .profile-btn--danger {
-    background: #dc2626;
-    color: #fff;
+    background:
+        rgba(211,209,206,0.08);
+
+    color: #D3D1CE;
+
+    border: 1px solid rgba(211,209,206,0.08);
 }
 
 .profile-btn--danger:hover {
-    background: #b91c1c;
+    background:
+        rgba(211,209,206,0.14);
 }

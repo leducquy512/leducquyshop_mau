@@ -1,6 +1,6 @@
 .highlands-footer {
-    background-color: #2f1b12;
-    color: #f7ede2;
+    background-color: #0f172a;
+    color: #e2e8f0;
     padding: 40px 20px 60px 20px;
     position: relative;
     width: 100%;
@@ -11,7 +11,7 @@
 .footer-green-strip {
     width: 100%;
     height: 4px;
-    background-color: #28a745;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
     position: absolute;
     top: 0;
     left: 0;
@@ -46,14 +46,14 @@
 .footer-logo-circle {
     width: 110px;
     height: 110px;
-    background-color: white;
+    background-color: #1e293b;
     border-radius: 50%;
-    border: 2px solid #922b27;
+    border: 2px solid #38bdf8;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .footer-logo-text {
@@ -71,7 +71,7 @@
     top: 20px;
     font-size: 9px;
     font-weight: bold;
-    color: #922627;
+    color: #38bdf8;
     letter-spacing: 1.5px;
 }
 
@@ -80,7 +80,7 @@
     bottom: 20px;
     font-size: 9px;
     font-weight: bold;
-    color: #922627;
+    color: #38bdf8;
     letter-spacing: 1.5px;
 }
 
@@ -96,14 +96,14 @@
 .logo-mountain {
     width: 45px;
     height: 25px;
-    background-color: #922b27;
+    background-color: #38bdf8;
     position: relative;
     clip-path: polygon(10% 100%, 30% 50%, 50% 70%, 70% 30%, 90% 100%);
 }
 
 .footer-copyright {
     font-size: 12px;
-    color: white;
+    color: #cbd5e1;
     margin: 0;
     opacity: 0.9;
 }
@@ -124,7 +124,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 15px;
-    color: #f7ede2;
+    color: #f8fafc;
 }
 
 .footer-links {
@@ -138,7 +138,7 @@
 }
 
 .footer-links a {
-    color: #f7ede2;
+    color: #cbd5e1;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.2s;
@@ -147,7 +147,7 @@
 
 .footer-links a:hover {
     opacity: 1;
-    color: #ffd200;
+    color: #38bdf8;
 }
 
 .footer-right {
@@ -166,19 +166,21 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #1e293b;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #922b27;
+    color: #38bdf8;
     text-decoration: none;
     font-size: 18px;
-transition: transform 0.2s, box-shadow 0.25s;
+    transition: transform 0.2s, box-shadow 0.25s, background-color 0.25s;
 }
 
 .social-icon:hover {
     transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #38bdf8;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
 }
 
 .footer-map {
@@ -200,7 +202,7 @@ transition: transform 0.2s, box-shadow 0.25s;
     display: inline-block;
     margin-top: 0.5rem;
     font-size: 12px;
-    color: #ffd200;
+    color: #38bdf8;
     text-decoration: none;
     opacity: 0.95;
 }
@@ -216,25 +218,30 @@ transition: transform 0.2s, box-shadow 0.25s;
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: #1e293b;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
     z-index: 10;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.25s;
 }
 
 .footer-chat-icon:hover {
     transform: scale(1.1);
+    background-color: #38bdf8;
 }
 
 .footer-chat-icon i {
     font-size: 22px;
-    color: #922627;
+    color: #38bdf8;
     position: relative;
+}
+
+.footer-chat-icon:hover i {
+    color: #ffffff;
 }
 
 @media (max-width: 1024px) {

@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AdminProduct from './Adminproduct';
-import AdminCategory from './Admincategory';
-import AdminCustomer from './Admincustomer';
-import AdminEmployee from './Adminemployee';
-import AdminBill from './Adminbill';
-import AdminInvoiceDetails from './Admininvoicedetails';
+// import AdminProduct from './Adminproduct';
+// import AdminCategory from './Admincategory';
+// import AdminCustomer from './Admincustomer';
+// import AdminEmployee from './Adminemployee';
+// import AdminBill from './Adminbill';
+// import AdminInvoiceDetails from './Admininvoicedetails';
 import './Admin.css';
 
 const jsonBase = import.meta.env.BASE_URL || '/';
@@ -95,8 +95,8 @@ const Admin = () => {
           fetch(`${jsonBase}products.json`),
           fetch(`${jsonBase}category.json`),
           fetch(`${jsonBase}bill.json`),
-          fetch(`${jsonBase}customer.json`),
-          fetch(`${jsonBase}employee.json`),
+          fetch(`${jsonBase}Customer.json`),
+          fetch(`${jsonBase}Employee.json`),
           fetch(`${jsonBase}invoicedetails.json`),
         ]);
         if (!pRes.ok) throw new Error('Không tải được products.json');
@@ -318,7 +318,7 @@ const Admin = () => {
           <span className="ruang-sidebar__brand-icon">
             <i className="fa-solid fa-layer-group" aria-hidden />
           </span>
-          <span>GalaxyCafe</span>
+          <span>QUYSHOP</span>
         </div>
         <hr className="ruang-sidebar__divider" />
         <div className="ruang-sidebar__heading">Tiện ích</div>

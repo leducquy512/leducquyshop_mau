@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import './ProductCard.css';
 
 const productsUrl = `${import.meta.env.BASE_URL}products.json`;
@@ -48,7 +49,7 @@ const ProductCard = ({ product }) => {
         <button className="ram-ssd-tag">{product.sizeL}</button>
       </div>
       <div className="product-pricing">
-        <div className="current-price">{product.currentPrice}</div>
+        <div className="current-price">{product.price?.toLocaleString('vi-VN')} đ</div>
         <div className="original-price-section">
           <span className='original-price'>{product.originalPrice}</span>
           {product.discount && <span className="discount">{product.discount}</span>}

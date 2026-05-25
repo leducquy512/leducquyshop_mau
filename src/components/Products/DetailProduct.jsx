@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
-import { imageMap } from '../../utils/productImages';
+import { imageMap } from '../../utils/ProductImages';
 import './DetailProduct.css';
 
 const DetailProduct = () => {
@@ -71,7 +71,7 @@ const DetailProduct = () => {
                 <div className="detail-info">
                     <h2>{product.name}</h2>
                     <p className="detail-price">
-                        <span className="current-price">{product.currentPrice}</span>
+                      <span className="current-price">{product.price?.toLocaleString('vi-VN')} đ</span>
                         {product.originalPrice && ( <span className="original-price">{product.originalPrice}</span> )}
                         {product.discount && <span className="discount">{product.discount}</span>}
                     </p>

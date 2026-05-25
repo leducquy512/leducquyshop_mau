@@ -7,30 +7,63 @@
 .back-button{
   background: none;
   border: none;
-  color: #0066cc;
+
+  color: #D3D1CE;
+
   font-weight: 600;
+
   cursor: pointer;
+
   margin-bottom: 12px;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.back-button:hover{
+  color: #ffffff;
+  opacity: 0.95;
 }
 
 .detail-card{
   display: grid;
+
   grid-template-columns: 1.2fr 1fr;
+
   gap: 40px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+
+  background:
+    rgba(38,46,54,0.82);
+
+  border:
+    1px solid rgba(211,209,206,0.08);
+
   border-radius: 12px;
+
   padding: 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.28);
+
+  backdrop-filter: blur(14px);
 }
 
 .detail-image img{
   width: 100%;
   height: auto;
+
   object-fit: contain;
+
   border-radius: 8px;
-  background: #fafafa;
+
+  background:
+    #090F15;
+
   padding: 16px;
+
+  border:
+    1px solid rgba(211,209,206,0.05);
 }
 
 .detail-info{
@@ -39,84 +72,148 @@
 
 .detail-info h2{
   margin: 0 0 12px;
+
   font-size: 28px;
-  color: #0f172a;
+
+  color: #D3D1CE;
 }
 
 .detail-price{
   display: flex;
   align-items: center;
   gap: 10px;
+
   margin: 12px 0 16px;
 }
 
 .detail-price .current-price{
   font-size: 26px;
-  color: #d35400;
+
+  color: #D3D1CE;
+
   font-weight: 700;
 }
 
 .detail-price .original-price{
   text-decoration: line-through;
-  color: #94a3b8;
+
+  color: #6C6D74;
 }
 
 .detail-price .discount{
-  background: #ffe2cc;
-  color:#d35400 ;
+  background:
+    rgba(211,209,206,0.08);
+
+  color: #D3D1CE;
+
   padding: 4px 10px;
+
   border-radius: 12px;
+
   font-weight: 600;
+
+  border:
+    1px solid rgba(211,209,206,0.08);
 }
 
 .detail-sizes{
   display: flex;
   align-items: center;
   gap: 8px;
+
   margin-bottom: 16px;
 }
 
 .size-chip{
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  background:
+    rgba(211,209,206,0.05);
+
+  border:
+    1px solid rgba(211,209,206,0.08);
+
   border-radius: 8px;
+
   padding: 6px 12px;
+
   font-weight: 600;
-  color: #334155;
+
+  color: #B3B7BA;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.size-chip:hover{
+  background:
+    rgba(211,209,206,0.08);
+
+  border-color:
+    rgba(211,209,206,0.16);
 }
 
 .detail-meta{
   display: flex;
   gap: 14px;
-  color: #475569;
+
+  color: #B3B7BA;
+
   font-weight: 500;
+
   margin-bottom: 20px;
 }
 
 .buy-now-button {
   width: 100%;
-  background: linear-gradient(135deg, #d35400 0%, #e67e22 100%);
-  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #B3B7BA 0%,
+      #D3D1CE 100%
+    );
+
+  color: #090F15;
+
   border: none;
+
   border-radius: 10px;
+
   padding: 14px 24px;
+
   font-size: 18px;
+
   font-weight: 700;
+
   cursor: pointer;
+
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(211, 84, 0, 0.3);
+
+  box-shadow:
+    0 4px 15px rgba(179,183,186,0.16);
+
   margin-top: 8px;
 }
 
 .buy-now-button:hover {
-  background: linear-gradient(135deg, #c0392b 0%, #d35400 100%);
+  background:
+    linear-gradient(
+      135deg,
+      #D3D1CE 0%,
+      #B3B7BA 100%
+    );
+
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(211, 84, 0, 0.4);
+
+  box-shadow:
+    0 6px 20px rgba(179,183,186,0.22);
 }
 
 .buy-now-button:active{
   transform: translateY(0);
-  box-shadow: 0 2px 10px rgba(211, 84, 0, 0.3);
+
+  box-shadow:
+    0 2px 10px rgba(179,183,186,0.12);
 }
 
 @media (max-width: 900px){

@@ -9,6 +9,7 @@ import Cart from "./components/Pages/Cart";
 import Login from "./components/Pages/Login";
 import Profile from "./components/Pages/Profile";
 import Signup from "./components/Pages/Signup";
+import Admin from './components/Pages/Admin';
 
 function App() {
   const location = useLocation();
@@ -31,11 +32,11 @@ function App() {
         />
         <Route path="/product/:id" element={<DetailProduct />} />
         <Route path="/cart" element={<Cart />} />
-
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       {!hideChrome && <Footer />}
     </>
