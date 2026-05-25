@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import DetailProduct from './components/Products/DetailProduct';
 import ProductList from "./components/Products/ProductList";
-import ProductCard from "./components/Products/ProductCard";
+// Đã xóa import ProductCard không sử dụng
 import Cart from "./components/Pages/Cart";
 import Login from "./components/Pages/Login";
 import Profile from "./components/Pages/Profile";
@@ -22,20 +22,12 @@ function App() {
     <>
       {!hideChrome && <Header />}
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <ProductList />
-            </>
-          }
-        />
+        <Route path="/" element={<ProductList />} />
         <Route path="/product/:id" element={<DetailProduct />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/" element={<Login />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
       {!hideChrome && <Footer />}
