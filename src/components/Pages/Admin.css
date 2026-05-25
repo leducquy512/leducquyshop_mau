@@ -1,11 +1,11 @@
 /* ==========================================================================
-   RESET & LAYOUT CHUNG (Đồng nhất với tone màu ấm áp của Cart.css)
+   RESET & LAYOUT CHUNG (Đồng nhất với tone màu lạnh Bắc Âu)
    ========================================================================== */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f7f5f1; /* Nền kem nhạt giống .cart-item */
-  color: #64747b; /* Màu chữ chính */
+  background-color: #D3D1CE; /* Đổi sang Arctic làm màu nền chính nhạt */
+  color: #090F15; /* Đổi chữ chính sang Midnight để dễ đọc trên nền sáng */
 }
 
 .ruang-layout {
@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  background: #f7f5f1;
+  background: #D3D1CE; /* Arctic */
 }
 
 .ruang-content {
@@ -43,7 +43,7 @@ body {
 
 .ruang-content__title {
   font-size: 32px;
-  color: #64747b; /* Đồng nhất .cart-title */
+  color: #090F15; /* Midnight cho tiêu đề nổi bật */
   font-weight: 700;
   margin: 0;
 }
@@ -59,23 +59,23 @@ body {
 }
 
 .ruang-link-mock {
-  color: #8d9886;
+  color: #6C6D74; /* Apres Ski */
   cursor: pointer;
   font-weight: 600;
 }
 
 .ruang-link-mock:hover {
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-breadcrumb__item--active {
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-breadcrumb__item + .ruang-breadcrumb__item::before {
   content: "/";
   margin-right: 8px;
-  color: #bdbba5;
+  color: #B3B7BA; /* Slopes */
 }
 
 /* ==========================================================================
@@ -83,8 +83,8 @@ body {
    ========================================================================== */
 .ruang-sidebar {
   width: 260px;
-  background: #ffffff;
-  border-right: 1px solid #d6d1c7;
+  background: #262E36; /* Mountainside cho sidebar tối sang trọng */
+  border-right: 1px solid #6C6D74; /* Apres Ski */
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -95,19 +95,19 @@ body {
   padding: 24px;
   font-size: 20px;
   font-weight: 700;
-  color: #64747b;
+  color: #D3D1CE; /* Arctic tương phản trên nền sidebar tối */
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 .ruang-sidebar__brand-icon {
-  color: #8d9886;
+  color: #B3B7BA; /* Slopes */
 }
 
 .ruang-sidebar__divider {
   border: 0;
-  border-top: 1px solid #efebe4;
+  border-top: 1px solid #6C6D74; /* Apres Ski */
   margin: 0 20px;
 }
 
@@ -117,7 +117,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #bdbba5;
+  color: #B3B7BA; /* Slopes */
 }
 
 .ruang-sidebar__nav {
@@ -141,7 +141,7 @@ body {
   border-radius: 10px;
   font-size: 15px;
   font-weight: 600;
-  color: #64747b;
+  color: #B3B7BA; /* Slopes */
   cursor: pointer;
   text-align: left;
   transition: 0.25s;
@@ -151,16 +151,16 @@ body {
   font-size: 16px;
   width: 20px;
   text-align: center;
-  color: #8d9886;
+  color: #B3B7BA; /* Slopes */
 }
 
 .ruang-sidebar__link:hover {
-  background: #efebe4;
-  color: #64747b;
+  background: #6C6D74; /* Apres Ski */
+  color: #D3D1CE; /* Arctic */
 }
 
 .ruang-sidebar__link.is-active {
-  background: #64747b;
+  background: #090F15; /* Midnight làm nổi bật menu đang chọn */
   color: #ffffff;
 }
 
@@ -172,7 +172,7 @@ body {
   margin-top: auto;
   padding: 20px;
   font-size: 12px;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
   text-align: center;
 }
 
@@ -181,8 +181,8 @@ body {
    ========================================================================== */
 .ruang-header {
   height: 70px;
-  background: #ffffff;
-  border-bottom: 1px solid #d6d1c7;
+  background: #262E36; /* Mountainside đồng bộ sidebar tối hoặc đổi thành trắng tùy ý, ở đây đồng bộ tối */
+  border-bottom: 1px solid #6C6D74; /* Apres Ski */
   padding: 0 30px;
   display: flex;
   align-items: center;
@@ -191,12 +191,12 @@ body {
 
 .ruang-header__toggle {
   display: none;
-  background: #efebe4;
+  background: #6C6D74; /* Apres Ski */
   border: none;
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  color: #64747b;
+  color: #D3D1CE; /* Arctic */
   font-size: 18px;
   cursor: pointer;
 }
@@ -209,12 +209,12 @@ body {
 }
 
 .ruang-header__home-btn {
-  background: #efebe4;
-  border: 1px solid #d6d1c7;
+  background: #6C6D74; /* Apres Ski */
+  border: 1px solid #B3B7BA; /* Slopes */
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #64747b;
+  color: #D3D1CE; /* Arctic */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -223,7 +223,7 @@ body {
 }
 
 .ruang-header__home-btn:hover {
-  background: #64747b;
+  background: #090F15; /* Midnight */
   color: #ffffff;
   transform: scale(1.05);
 }
@@ -246,13 +246,13 @@ body {
 }
 
 .ruang-user-menu__trigger:hover {
-  background: #efebe4;
+  background: #6C6D74; /* Apres Ski */
 }
 
 .ruang-user-menu__avatar {
   width: 36px;
   height: 36px;
-  background: linear-gradient(135deg, #64747b, #8d9886);
+  background: linear-gradient(135deg, #090F15, #6C6D74); /* Midnight & Apres Ski */
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -264,12 +264,12 @@ body {
 
 .ruang-user-menu__name {
   font-weight: 600;
-  color: #64747b;
+  color: #D3D1CE; /* Arctic */
   font-size: 15px;
 }
 
 .ruang-user-menu__caret {
-  color: #bdbba5;
+  color: #B3B7BA; /* Slopes */
   font-size: 12px;
 }
 
@@ -278,10 +278,10 @@ body {
   top: calc(100% + 8px);
   right: 0;
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
   min-width: 220px;
-  box-shadow: 0 4px 18px rgba(100, 116, 123, 0.08);
+  box-shadow: 0 4px 18px rgba(9, 15, 21, 0.08);
   padding: 8px 0;
   z-index: 100;
 }
@@ -293,18 +293,18 @@ body {
 .ruang-user-menu__dropdown-name {
   margin: 0;
   font-weight: 700;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-user-menu__dropdown-role {
   margin: 4px 0 0;
   font-size: 13px;
-  color: #8d9886;
+  color: #6C6D74; /* Apres Ski */
 }
 
 .ruang-user-menu__divider {
   border: 0;
-  border-top: 1px solid #efebe4;
+  border-top: 1px solid #D3D1CE; /* Arctic */
   margin: 6px 0;
 }
 
@@ -316,7 +316,7 @@ body {
   text-align: left;
   font-size: 14px;
   font-weight: 600;
-  color: #64747b;
+  color: #262E36; /* Mountainside */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -324,11 +324,11 @@ body {
 }
 
 .ruang-user-menu__item:hover {
-  background: #f7f5f1;
+  background: #D3D1CE; /* Arctic */
 }
 
 .ruang-user-menu__item--logout {
-  color: #c97d7d; /* Màu đỏ ấm dịu hợp tone */
+  color: #c97d7d;
 }
 .ruang-user-menu__item--logout:hover {
   background: #fdf2f2;
@@ -347,10 +347,10 @@ body {
 
 .ruang-stat-card {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
-  border-radius: 14px; /* Đồng nhất .cart-summary */
+  border: 1px solid #B3B7BA; /* Slopes */
+  border-radius: 14px;
   padding: 24px;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -364,11 +364,11 @@ body {
   height: 100%;
 }
 
-/* Phân loại màu viền thẻ theo tone màu Cart */
-.ruang-stat-card--primary::before { background: #64747b; }
-.ruang-stat-card--success::before { background: #8d9886; }
-.ruang-stat-card--info::before    { background: #bdbba5; }
-.ruang-stat-card--warning::before { background: #d6d1c7; }
+/* Phân loại màu viền thẻ theo tone màu lạnh mới */
+.ruang-stat-card--primary::before { background: #090F15; } /* Midnight */
+.ruang-stat-card--success::before { background: #6C6D74; } /* Apres Ski */
+.ruang-stat-card--info::before    { background: #B3B7BA; } /* Slopes */
+.ruang-stat-card--warning::before { background: #262E36; } /* Mountainside */
 
 .ruang-stat-card__body {
   display: flex;
@@ -380,25 +380,24 @@ body {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
   margin-bottom: 6px;
 }
 
 .ruang-stat-card__value {
   font-size: 24px;
   font-weight: 700;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
-/* Gán màu biến động giá trị cho Doanh thu/Tổng tiền tương ứng màu .total-price */
 .ruang-stat-card--primary .ruang-stat-card__value,
 .ruang-stat-card--warning .ruang-stat-card__value {
-  color: #8d9886;
+  color: #262E36; /* Mountainside */
 }
 
 .ruang-stat-card__icon-box {
   font-size: 26px;
-  color: #efebe4;
+  color: #D3D1CE; /* Arctic */
 }
 
 
@@ -414,21 +413,21 @@ body {
 
 .ruang-chart-card {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
 }
 
 .ruang-chart-card__header {
   padding: 20px 24px;
-  border-bottom: 1px solid #efebe4;
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
 }
 
 .ruang-chart-card__title {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-chart-card__body {
@@ -451,14 +450,14 @@ body {
 .ruang-bar-chart__date {
   width: 90px;
   font-size: 14px;
-  color: #64747b;
+  color: #262E36; /* Mountainside */
 }
 
 .ruang-bar-chart__progress-wrapper,
 .ruang-top-products__track {
   flex: 1;
   height: 12px;
-  background: #efebe4;
+  background: #D3D1CE; /* Arctic */
   border-radius: 6px;
   overflow: hidden;
 }
@@ -466,7 +465,7 @@ body {
 .ruang-bar-chart__progress-bar,
 .ruang-top-products__fill {
   height: 100%;
-  background: linear-gradient(90deg, #64747b, #8d9886);
+  background: linear-gradient(90deg, #090F15, #6C6D74); /* Midnight sang Apres Ski */
   border-radius: 6px;
 }
 
@@ -475,7 +474,7 @@ body {
   text-align: right;
   font-size: 14px;
   font-weight: 600;
-  color: #8d9886;
+  color: #262E36; /* Mountainside */
 }
 
 /* ===== TOP PRODUCTS ===== */
@@ -494,11 +493,11 @@ body {
 
 .ruang-top-products__name {
   font-weight: 600;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-top-products__qty {
-  color: #8d9886;
+  color: #6C6D74; /* Apres Ski */
   font-weight: 600;
 }
 
@@ -514,22 +513,22 @@ body {
 
 .ruang-table-card {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
   overflow: hidden;
 }
 
 .ruang-table-card__header {
   padding: 20px 24px;
-  border-bottom: 1px solid #efebe4;
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
 }
 
 .ruang-table-card__title {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-table-responsive {
@@ -546,17 +545,17 @@ body {
 }
 
 .ruang-table th {
-  background: #fcfbf8;
+  background: #D3D1CE; /* Arctic */
   padding: 16px 20px;
   font-weight: 700;
-  color: #64747b;
-  border-bottom: 1px solid #efebe4;
+  color: #090F15; /* Midnight */
+  border-bottom: 1px solid #B3B7BA; /* Slopes */
 }
 
 .ruang-table td {
   padding: 16px 20px;
-  color: #64747b;
-  border-bottom: 1px solid #efebe4;
+  color: #262E36; /* Mountainside */
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
   vertical-align: middle;
 }
 
@@ -565,13 +564,13 @@ body {
 }
 
 .ruang-table tr:hover td {
-  background: #fcfbf8;
+  background: #D3D1CE; /* Arctic */
 }
 
 .ruang-table__empty, .ruang-empty-text {
   padding: 40px;
   text-align: center;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
   font-style: italic;
   margin: 0;
 }
@@ -586,28 +585,28 @@ body {
 }
 
 .ruang-badge--done {
-  background: #eef3ec;
-  color: #5d6b56;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
 }
 
 .ruang-badge--shipping {
-  background: #eef3f6;
-  color: #4a5a61;
+  background: #B3B7BA; /* Slopes */
+  color: #262E36; /* Mountainside */
 }
 
 .ruang-badge--pending {
-  background: #fcf8f2;
-  color: #a88d67;
+  background: #6C6D74; /* Apres Ski */
+  color: #ffffff;
 }
 
 .ruang-badge--processing {
-  background: #f4f3ef;
-  color: #64747b;
+  background: #262E36; /* Mountainside */
+  color: #ffffff;
 }
 
 .ruang-badge--unknown {
-  background: #efebe4;
-  color: #bdbba5;
+  background: #D3D1CE;
+  color: #6C6D74;
 }
 
 /* ===== VIP CUSTOMERS LIST ===== */
@@ -623,7 +622,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 14px;
-  border-bottom: 1px solid #efebe4;
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
 }
 
 .ruang-vip-item:last-child {
@@ -640,8 +639,8 @@ body {
 .ruang-vip-item__icon {
   width: 40px;
   height: 40px;
-  background: #efebe4;
-  color: #8d9886;
+  background: #D3D1CE; /* Arctic */
+  color: #262E36; /* Mountainside */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -657,18 +656,18 @@ body {
 
 .ruang-vip-item__name {
   font-weight: 600;
-  color: #64747b;
+  color: #090F15; /* Midnight */
   font-size: 15px;
 }
 
 .ruang-vip-item__count {
   font-size: 13px;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
 }
 
 .ruang-vip-item__total {
   font-weight: 700;
-  color: #8d9886;
+  color: #262E36; /* Mountainside */
   font-size: 16px;
 }
 
@@ -692,21 +691,21 @@ body {
 }
 
 .ruang-btn--primary {
-  background: linear-gradient(135deg, #64747b, #8d9886); /* Giống .checkout-btn */
+  background: linear-gradient(135deg, #090F15, #262E36); /* Hệ màu tối huyền bí Midnight & Mountainside */
   color: #ffffff;
 }
 .ruang-btn--primary:hover {
-  background: linear-gradient(135deg, #5b686d, #7e8a78);
+  background: linear-gradient(135deg, #000000, #090F15);
   transform: translateY(-1px);
 }
 
 .ruang-btn--secondary {
-  background: #efebe4;
-  color: #64747b;
-  border: 1px solid #d6d1c7;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
+  border: 1px solid #B3B7BA; /* Slopes */
 }
 .ruang-btn--secondary:hover {
-  background: #d6d1c7;
+  background: #B3B7BA; /* Slopes */
   color: #ffffff;
 }
 
@@ -720,11 +719,11 @@ body {
 
 .ruang-btn--ghost {
   background: transparent;
-  color: #8d9886;
-  border: 1px dashed #8d9886;
+  color: #262E36; /* Mountainside */
+  border: 1px dashed #262E36;
 }
 .ruang-btn--ghost:hover {
-  background: #efebe4;
+  background: #D3D1CE; /* Arctic */
 }
 
 .ruang-btn--sm {
@@ -735,18 +734,18 @@ body {
 /* ===== LOADING & ERROR STATES ===== */
 .ruang-loading-box, .ruang-error-box {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
   padding: 50px 20px;
   text-align: center;
-  box-shadow: 0 4px 18px rgba(100, 116, 123, 0.06);
+  box-shadow: 0 4px 18px rgba(9, 15, 21, 0.06);
 }
 
 .ruang-spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid #efebe4;
-  border-top-color: #8d9886;
+  border: 4px solid #D3D1CE; /* Arctic */
+  border-top-color: #090F15; /* Midnight */
   border-radius: 50%;
   animation: ruang-spin 1s linear infinite;
   margin: 0 auto 16px;
@@ -773,19 +772,19 @@ body {
 .ruang-error-box__title {
   margin: 0 0 8px;
   font-size: 20px;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-error-box__msg {
   margin: 0 0 20px;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
 }
 
 /* ===== MODAL DIALOGS ===== */
 .ruang-modal-backdrop {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(100, 116, 123, 0.4); /* Làm tối mờ nhẹ dịu */
+  background: rgba(9, 15, 21, 0.4); /* Làm tối mờ bằng Midnight */
   backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
@@ -795,11 +794,11 @@ body {
 
 .ruang-modal {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
   width: 100%;
   max-width: 450px;
-  box-shadow: 0 10px 30px rgba(100, 116, 123, 0.15);
+  box-shadow: 0 10px 30px rgba(9, 15, 21, 0.15);
   animation: ruang-modal-slide 0.3s ease-out;
   overflow: hidden;
 }
@@ -811,7 +810,7 @@ body {
 
 .ruang-modal__header {
   padding: 20px 24px;
-  border-bottom: 1px solid #efebe4;
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -821,32 +820,32 @@ body {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-modal__close {
   background: transparent;
   border: none;
   font-size: 24px;
-  color: #bdbba5;
+  color: #B3B7BA; /* Slopes */
   cursor: pointer;
   line-height: 1;
 }
 .ruang-modal__close:hover {
-  color: #64747b;
+  color: #090F15; /* Midnight */
 }
 
 .ruang-modal__body {
   padding: 24px;
   font-size: 15px;
-  color: #64747b;
+  color: #262E36; /* Mountainside */
   line-height: 1.5;
 }
 
 .ruang-modal__footer {
   padding: 16px 24px;
-  background: #fcfbf8;
-  border-top: 1px solid #efebe4;
+  background: #D3D1CE; /* Arctic */
+  border-top: 1px solid #B3B7BA; /* Slopes */
   display: flex;
   justify-content: flex-end;
   gap: 12px;
@@ -884,7 +883,7 @@ body {
   background: #ffffff;
   padding: 16px 24px;
   border-radius: 14px;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
 }
 
 .ruang-toolbar-search {
@@ -895,22 +894,22 @@ body {
 
 .ruang-toolbar-search label {
   font-weight: 600;
-  color: #64747b;
+  color: #090F15; /* Midnight */
   font-size: 15px;
 }
 
 .ruang-toolbar-search input[type="text"] {
   padding: 10px 16px;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 10px;
-  background: #fcfbf8;
-  color: #64747b;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
   font-size: 14px;
   outline: none;
   transition: 0.25s;
 }
 .ruang-toolbar-search input[type="text"]:focus {
-  border-color: #8d9886;
+  border-color: #262E36; /* Mountainside */
   background: #ffffff;
 }
 
@@ -923,7 +922,7 @@ body {
 .ruang-table_link {
   background: none;
   border: none;
-  color: #8d9886;
+  color: #262E36; /* Mountainside */
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
@@ -931,27 +930,27 @@ body {
   transition: color 0.2s;
 }
 .ruang-table_link:hover {
-  color: #64747b;
+  color: #090F15; /* Midnight */
   text-decoration: underline;
 }
 
 /* Hệ thống Form Quản lý Hóa đơn */
 .ruang-form-card {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
   padding: 30px;
   max-width: 600px;
   margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
 }
 
 .ruang-form-card__title {
   margin: 0 0 24px;
   font-size: 22px;
   font-weight: 700;
-  color: #64747b;
-  border-bottom: 1px solid #efebe4;
+  color: #090F15; /* Midnight */
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
   padding-bottom: 12px;
 }
 
@@ -964,16 +963,16 @@ body {
 
 .ruang-form-group label {
   font-weight: 600;
-  color: #64747b;
+  color: #090F15; /* Midnight */
   font-size: 15px;
 }
 
 .ruang-form-control {
   padding: 12px 16px;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 10px;
-  background: #fcfbf8;
-  color: #64747b;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
   font-size: 15px;
   outline: none;
   transition: 0.25s;
@@ -981,7 +980,7 @@ body {
   width: 100%;
 }
 .ruang-form-control:focus {
-  border-color: #8d9886;
+  border-color: #262E36; /* Mountainside */
   background: #ffffff;
 }
 
@@ -990,7 +989,7 @@ body {
   justify-content: flex-end;
   gap: 12px;
   margin-top: 30px;
-  border-top: 1px solid #efebe4;
+  border-top: 1px solid #D3D1CE; /* Arctic */
   padding-top: 20px;
 }
 
@@ -1001,7 +1000,7 @@ body {
 .ruang-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(100, 116, 123, 0.3);
+  background: rgba(9, 15, 21, 0.3); /* Midnight overlay translucent */
   z-index: 98;
   opacity: 0;
   pointer-events: none;
@@ -1055,8 +1054,9 @@ body {
 .ruang-boot {
   display: none;
 }
+
 /* ==========================================================================
-   CSS DÀNH RIÊNG CHO COMPONENT ADMINBILL (Đồng bộ tone màu Cart.css)
+   CSS DÀNH RIÊNG CHO COMPONENT ADMINBILL (Đồng bộ tone màu lạnh Bắc Âu)
    ========================================================================== */
 
 /* Thẻ bọc ngoài cùng của module hóa đơn */
@@ -1082,8 +1082,8 @@ body {
 }
 
 .admin-msg--error {
-  background-color: #fdf2f2; /* Màu đỏ hồng nhạt dịu mắt */
-  color: #c97d7d;            /* Màu đỏ ấm nhã nhặn */
+  background-color: #fdf2f2;
+  color: #c97d7d;
   border: 1px solid #f9dbdb;
 }
 
@@ -1097,8 +1097,8 @@ body {
   margin-bottom: 24px;
   background: #ffffff;
   padding: 16px 24px;
-  border-radius: 14px; /* Bo góc mượt mà giống .cart-summary */
-  border: 1px solid #d6d1c7;
+  border-radius: 14px;
+  border: 1px solid #B3B7BA; /* Slopes */
   box-sizing: border-box;
 }
 
@@ -1115,16 +1115,16 @@ body {
 
 .admin-toolbar-search label {
   font-weight: 600;
-  color: #64747b; /* Xám ấm chủ đạo */
+  color: #090F15; /* Midnight */
   font-size: 15px;
 }
 
 .admin-toolbar-search input[type="text"] {
   padding: 10px 16px;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 10px;
-  background: #fcfbf8;
-  color: #64747b;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
   font-size: 14px;
   outline: none;
   transition: all 0.25s ease;
@@ -1132,9 +1132,9 @@ body {
 }
 
 .admin-toolbar-search input[type="text"]:focus {
-  border-color: #8d9886; /* Xanh rêu khi focus */
+  border-color: #262E36; /* Mountainside */
   background: #ffffff;
-  box-shadow: 0 0 0 3px rgba(141, 152, 134, 0.15);
+  box-shadow: 0 0 0 3px rgba(38, 46, 54, 0.15);
 }
 
 /* ===== HỆ THỐNG NÚT BẤM (BUTTONS) ===== */
@@ -1149,14 +1149,14 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  background: linear-gradient(135deg, #64747b, #8d9886); /* Đổ màu giống .checkout-btn */
+  background: linear-gradient(135deg, #090F15, #262E36); /* Gradient từ Midnight sang Mountainside */
   color: #ffffff;
   transition: all 0.25s ease;
   box-sizing: border-box;
 }
 
 .admin-btn:hover {
-  background: linear-gradient(135deg, #5b686d, #7e8a78);
+  background: linear-gradient(135deg, #000000, #090F15);
   transform: translateY(-1px);
 }
 
@@ -1170,17 +1170,17 @@ body {
   transform: none;
 }
 
-/* Nút bấm viền đứt quãng (Dùng khi hiển thị tất cả) */
+/* Nút bấm viền đứt quãng */
 .admin-btn--ghost {
   background: transparent;
-  color: #8d9886;
-  border: 1px dashed #8d9886;
+  color: #262E36; /* Mountainside */
+  border: 1px dashed #262E36;
 }
 
 .admin-btn--ghost:hover {
-  background: #efebe4; /* Nền kem nhạt khi hover */
-  color: #64747b;
-  border-color: #d6d1c7;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
+  border-color: #B3B7BA; /* Slopes */
 }
 
 /* ===== BẢNG DỮ LIỆU HÓA ĐƠN (TABLE) ===== */
@@ -1188,9 +1188,9 @@ body {
   width: 100%;
   overflow-x: auto;
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1202,36 +1202,33 @@ body {
 }
 
 .admin-table th {
-  background: #fcfbf8; /* Nền đầu bảng hơi ngả kem nhẹ */
+  background: #D3D1CE; /* Arctic */
   padding: 16px 20px;
   font-weight: 700;
-  color: #64747b;
-  border-bottom: 1px solid #efebe4;
+  color: #090F15; /* Midnight */
+  border-bottom: 1px solid #B3B7BA; /* Slopes */
   white-space: nowrap;
 }
 
 .admin-table td {
   padding: 16px 20px;
-  color: #64747b;
-  border-bottom: 1px solid #efebe4;
+  color: #262E36; /* Mountainside */
+  border-bottom: 1px solid #D3D1CE; /* Arctic */
   vertical-align: middle;
 }
 
-/* Loại bỏ viền dưới cho dòng cuối cùng */
 .admin-table tr:last-child td {
   border-bottom: none;
 }
 
-/* Hiệu ứng trỏ chuột qua các hàng */
 .admin-table tr:hover td {
-  background: #fcfbf8;
+  background: #D3D1CE; /* Arctic */
 }
 
-/* Trạng thái bảng trống không có dữ liệu */
 .admin-table_empty {
   padding: 50px 20px !important;
   text-align: center;
-  color: #bdbba5;
+  color: #6C6D74; /* Apres Ski */
   font-style: italic;
 }
 
@@ -1245,7 +1242,7 @@ body {
 .admin-table_link {
   background: none;
   border: none;
-  color: #8d9886; /* Màu xanh rêu nhã nhặn */
+  color: #262E36; /* Mountainside */
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
@@ -1254,11 +1251,10 @@ body {
 }
 
 .admin-table_link:hover {
-  color: #64747b;
+  color: #090F15; /* Midnight */
   text-decoration: underline;
 }
 
-/* Đổi màu riêng cho nút Xóa nhằm cảnh báo hành động nguy hiểm */
 .admin-table_actions button:last-child.admin-table_link {
   color: #c97d7d;
 }
@@ -1276,19 +1272,18 @@ body {
 /* ===== THIẾT KẾ CHO KHU VỰC FORM (LƯU / HỦY) ===== */
 .admin-bill-container form {
   background: #ffffff;
-  border: 1px solid #d6d1c7;
+  border: 1px solid #B3B7BA; /* Slopes */
   border-radius: 14px;
   padding: 30px;
   max-width: 500px;
   margin: 20px auto;
-  box-shadow: 0 4px 16px rgba(100, 116, 123, 0.04);
+  box-shadow: 0 4px 16px rgba(9, 15, 21, 0.04);
   display: flex;
   justify-content: flex-end;
   gap: 12px;
   box-sizing: border-box;
 }
 
-/* Phong cách các nút bên trong form */
 .admin-bill-container form button {
   padding: 12px 24px;
   font-size: 15px;
@@ -1300,24 +1295,24 @@ body {
 
 /* Nút Lưu (Submit) */
 .admin-bill-container form button[type="submit"] {
-  background: linear-gradient(135deg, #64747b, #8d9886);
+  background: linear-gradient(135deg, #090F15, #262E36); /* Midnight & Mountainside */
   color: #ffffff;
   border: none;
 }
 
 .admin-bill-container form button[type="submit"]:hover {
-  background: linear-gradient(135deg, #5b686d, #7e8a78);
+  background: linear-gradient(135deg, #000000, #090F15);
 }
 
 /* Nút Hủy (Button thường) */
 .admin-bill-container form button[type="button"] {
-  background: #efebe4;
-  color: #64747b;
-  border: 1px solid #d6d1c7;
+  background: #D3D1CE; /* Arctic */
+  color: #090F15; /* Midnight */
+  border: 1px solid #B3B7BA; /* Slopes */
 }
 
 .admin-bill-container form button[type="button"]:hover {
-  background: #d6d1c7;
+  background: #B3B7BA; /* Slopes */
   color: #ffffff;
 }
 
