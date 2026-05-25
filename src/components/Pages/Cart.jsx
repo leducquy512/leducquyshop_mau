@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {imageMap} from '../../utils/ProductImages';
+import { imageMap } from '../../utils/ProductImages';
 import './Cart.css';
 
 const Cart = () => {
@@ -48,15 +48,17 @@ const Cart = () => {
         updateCart(updatedCart);
     };
 
+    // --- PHẦN ĐÃ SỬA LẠI: Tính tổng tiền dựa trên thuộc tính item.price ---
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => {
-            const price = parseFloat(item.currentPrice.replace(/[^\d]/g, '')) || 0;
+            const price = parseFloat(item.price) || 0;
             return total + (price * item.quantity);
         }, 0);
     };
 
+    // --- PHẦN ĐÃ SỬA LẠI: Hàm format tiền VND ---
     const formatPrice = (price) => {
-        return new Intl.NumberFormat('vi-VN').format(price) + '₫';
+        return new Intl.NumberFormat('vi-VN').format(price) + ' đ';
     };
 
     if (cartItems.length === 0) {
@@ -79,7 +81,8 @@ const Cart = () => {
             <div className="cart-content">
                 <div className="cart-items">
                     {cartItems.map((item) => {
-                        const price = parseFloat(item.currentPrice.replace(/[^\d]/g, '')) || 0;
+                        // --- PHẦN ĐÃ SỬA LẠI: Tránh lỗi ép chuỗi và tính toán chính xác ---
+                        const price = parseFloat(item.price) || 0;
                         const itemTotal = price * item.quantity;
 
                         return (
@@ -92,7 +95,8 @@ const Cart = () => {
                                 </div>
                                 <div className="cart-item-info">
                                     <h3 className="cart-item-name">{item.name}</h3>
-                                    <p className="cart-item-price">{item.currentPrice}</p>
+                                    {/* --- PHẦN ĐÃ SỬA LẠI: Hiển thị giá sản phẩm hợp lệ --- */}
+                                    <p className="cart-item-price">{formatPrice(price)}</p>
                                 </div>
                                 <div className="cart-item-quantity">
                                     <button

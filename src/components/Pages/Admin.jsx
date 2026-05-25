@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import AdminProduct from './Adminproduct';
-// import AdminCategory from './Admincategory';
-// import AdminCustomer from './Admincustomer';
-// import AdminEmployee from './Adminemployee';
-// import AdminBill from './Adminbill';
-// import AdminInvoiceDetails from './Admininvoicedetails';
+import AdminProduct from './Adminproduct';
+import AdminCategory from './Admincategory';
+import AdminCustomer from './Admincustomer';
+import AdminEmployee from './Adminemployee';
+import AdminBill from './Adminbill';
+import AdminInvoiceDetails from './Admininvoicedetails';
 import './Admin.css';
 
 const jsonBase = import.meta.env.BASE_URL || '/';
@@ -95,9 +95,9 @@ const Admin = () => {
           fetch(`${jsonBase}products.json`),
           fetch(`${jsonBase}category.json`),
           fetch(`${jsonBase}bill.json`),
-          fetch(`${jsonBase}Customer.json`),
-          fetch(`${jsonBase}Employee.json`),
-          fetch(`${jsonBase}invoicedetails.json`),
+          fetch(`${jsonBase}customer.json`),
+          fetch(`${jsonBase}employee.json`),
+          fetch(`${jsonBase}invoicedetail.json`),
         ]);
         if (!pRes.ok) throw new Error('Không tải được products.json');
         const pdata = await pRes.json();

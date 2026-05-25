@@ -250,7 +250,7 @@ function AdminEmployee({ embedded = false }) {
                   displayedRows.map((r) => (
                     <tr key={r.id}>
                       <td>{r.id}</td>
-                      <td>{r.role}</td>
+                      <td>{r.position}</td>
                       <td>{r.name}</td>
                       <td>{r.gender}</td>
                       <td>{r.birthdate}</td>

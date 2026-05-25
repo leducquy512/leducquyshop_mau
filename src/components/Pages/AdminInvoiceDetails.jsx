@@ -117,7 +117,7 @@ function AdminInvoiceDetails({ embedded = false }) {
       setLoading(true);
       setLoadError('');
       try {
-        const res = await fetch(`${jsonBase}invoicedetails.json`);
+        const res = await fetch(`${jsonBase}invoicedetail.json`);
         if (!res.ok) throw new Error('Không tải được invoicedetails.json');
         const data = await res.json();
         setRows(Array.isArray(data) ? data : []);
@@ -269,10 +269,10 @@ function AdminInvoiceDetails({ embedded = false }) {
                   displayedRows.map((r) => (
                     <tr key={r.id}>
                       <td>{r.id}</td>
-                      <td>{r.bill_id}</td>
-                      <td>{r.product_id}</td>
+                      <td>{r.invoiceId}</td>
+                      <td>{r.productId}</td>
                       <td>{r.quantity}</td>
-                      <td>{r.unit_price}</td>
+                      <td>{r.price}</td>
                       <td>{r.price}</td>
                       <td>
                         <div className="admin-table_actions">

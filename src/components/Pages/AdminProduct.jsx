@@ -281,9 +281,9 @@ function AdminProduct({ embedded = false }) {
                       <td>{p.id}</td>
                       <td>{p.name}</td>
                       <td>{p.imageKey}</td>
-                      <td>{p.originalPrice}</td>
+                      <td>{p.price}</td>
                       <td>{p.currentPrice}</td>
-                      <td>{p.categoryid}</td>
+                      <td>{p.idcategory}</td>
                       <td>
                         <div className="admin-table_actions">
                           <button

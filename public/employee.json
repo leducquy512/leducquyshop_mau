@@ -4,6 +4,8 @@
     "name": "Nguyễn Văn Minh",
     "position": "Quản lý cửa hàng",
     "phone": "0901111111",
+    "gender": "Nam",
+    "birthdate": "1985-06-15",
     "email": "minh.nguyen@shop.com"
   },
   {
@@ -11,6 +13,8 @@
     "name": "Trần Thị Lan",
     "position": "Nhân viên bán hàng",
     "phone": "0902222222",
+    "gender": "Nữ",
+    "birthdate": "1990-03-20",
     "email": "lan.tran@shop.com"
   },
   {
@@ -18,6 +22,8 @@
     "name": "Lê Hoàng Phúc",
     "position": "Nhân viên kho",
     "phone": "0903333333",
+    "gender": "Nam",
+    "birthdate": "1988-12-10",
     "email": "phuc.le@shop.com"
   },
   {
@@ -25,6 +31,8 @@
     "name": "Phạm Thu Trang",
     "position": "Chăm sóc khách hàng",
     "phone": "0904444444",
+    "gender": "Nữ",
+    "birthdate": "1992-08-25",
     "email": "trang.pham@shop.com"
   },
   {
@@ -32,6 +40,8 @@
     "name": "Võ Minh Quân",
     "position": "Nhân viên giao hàng",
     "phone": "0905555555",
+    "gender": "Nam",
+    "birthdate": "1985-06-15",
     "email": "quan.vo@shop.com"
   },
   {
@@ -39,6 +49,8 @@
     "name": "Đặng Thanh Hùng",
     "position": "Nhân viên bán hàng",
     "phone": "0906666666",
+    "gender": "Nam",
+    "birthdate": "1985-06-15",
     "email": "hung.dang@shop.com"
   },
   {
@@ -46,6 +58,8 @@
     "name": "Bùi Ngọc Anh",
     "position": "Nhân viên marketing",
     "phone": "0907777777",
+    "gender": "Nữ",
+    "birthdate": "1990-03-20",
     "email": "anh.bui@shop.com"
   },
   {
@@ -53,6 +67,8 @@
     "name": "Hoàng Thị Mai",
     "position": "Nhân viên thu ngân",
     "phone": "0908888888",
+    "gender": "Nữ",
+    "birthdate": "1990-03-20",
     "email": "mai.hoang@shop.com"
   },
   {
@@ -60,6 +76,8 @@
     "name": "Phan Quốc Bảo",
     "position": "Nhân viên kho",
     "phone": "0909999999",
+    "gender": "Nam",
+    "birthdate": "1985-06-15",
     "email": "bao.phan@shop.com"
   },
   {
@@ -67,6 +85,8 @@
     "name": "Lý Thị Hạnh",
     "position": "Nhân viên bán hàng",
     "phone": "0910000000",
+    "gender": "Nữ",
+    "birthdate": "1990-03-20",
     "email": "hanh.ly@shop.com"
   }
 ]
