@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import { imageMap } from '../../utils/ProductImages';
 import './ProductList.css';
@@ -7,6 +8,9 @@ const PRODUCTS_PER_PAGE = 6;
 const jsonBase = import.meta.env.BASE_URL || '/';
 
 const ProductList = () => {
+    const [searchParams] = useSearchParams();
+    const searchQuery = searchParams.get('q') || '';
+    
     const [products, setProducts] = useState([]);
     const [categories, setCategories] = useState([]);
     const [selectedCategoryId, setSelectedCategoryId] = useState(null);
@@ -43,7 +47,9 @@ const ProductList = () => {
         loadData();
     }, []);
     const filteredProducts =
-    selectedCategoryId == null
+    searchQuery.trim()
+        ? products.filter(p => p.name && p.name.toLowerCase().includes(searchQuery.toLowerCase()))
+        : selectedCategoryId == null
         ? products
         : products.filter((p) => p.idcategory === selectedCategoryId);
 
@@ -56,6 +62,10 @@ const ProductList = () => {
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedCategoryId]);
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [searchQuery]);
 
     const safePage = Math.min(currentPage, totalPages);
     const start = (safePage - 1) * PRODUCTS_PER_PAGE;
@@ -105,8 +115,16 @@ const ProductList = () => {
                 )
                 }
                 <div className="product-list-main">
+                    {searchQuery.trim() && (
+                        <div className="product-list-search-header">
+                            <h2>Kết quả tìm kiếm cho: <strong>"{searchQuery}"</strong></h2>
+                            <p>{filteredProducts.length} sản phẩm được tìm thấy</p>
+                        </div>
+                    )}
                     {filteredProducts.length === 0 ? (
-                        <p className="product-list-empty">Không có sản phẩm trong danh mục này.</p>
+                        <p className="product-list-empty">
+                            {searchQuery.trim() ? `Không tìm thấy sản phẩm với từ khóa "${searchQuery}". Thử từ khóa khác.` : 'Không có sản phẩm trong danh mục này.'}
+                        </p>
                     ) : (
                         <div className="product-list">
                             {visibleProducts.map((product) => (

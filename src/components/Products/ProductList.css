@@ -143,6 +143,34 @@
   min-width: 0;
 }
 
+.product-list-search-header {
+  margin: 0 0 24px;
+  padding: 20px;
+  background: rgba(38, 46, 54, 0.82);
+  border-radius: 12px;
+  border: 1px solid rgba(211, 209, 206, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.product-list-search-header h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #D3D1CE;
+}
+
+.product-list-search-header h2 strong {
+  color: #B3B7BA;
+  font-style: italic;
+}
+
+.product-list-search-header p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #B3B7BA;
+  font-weight: 500;
+}
+
 .product-list-empty {
   margin: 0;
 
