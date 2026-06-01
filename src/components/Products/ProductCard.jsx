@@ -10,6 +10,16 @@ const ProductCard = ({ product }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const originalPrice = Number(product.price ?? product.originalPrice ?? 0);
+  const currentPrice = Number(product.currentPrice ?? product.price ?? 0);
+  const hasDiscount = originalPrice > currentPrice;
+  const discountPercent = hasDiscount
+    ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
+    : 0;
+
+  const formattedCurrentPrice = currentPrice.toLocaleString('vi-VN');
+  const formattedOriginalPrice = originalPrice.toLocaleString('vi-VN');
+
   const handleBuy = async () => {
     setIsLoading(true);
     setError(null);
@@ -49,11 +59,13 @@ const ProductCard = ({ product }) => {
   {product.sizes?.includes('L') && <button className="ram-ssd-tag">L</button>}
 </div>
       <div className="product-pricing">
-        <div className="current-price">{product.price?.toLocaleString('vi-VN')} đ</div>
-        <div className="original-price-section">
-          <span className='original-price'>{product.originalPrice}</span>
-          {product.discount && <span className="discount">{product.discount}</span>}
-        </div>
+        <div className="current-price">{formattedCurrentPrice} đ</div>
+        {hasDiscount && (
+          <div className="original-price-section">
+            <span className="original-price">{formattedOriginalPrice} đ</span>
+            <span className="discount">-{discountPercent}%</span>
+          </div>
+        )}
       </div>
 
       <div className="product-rating-sales">

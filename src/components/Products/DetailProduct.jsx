@@ -54,6 +54,16 @@ const DetailProduct = () => {
         return null;
     }
 
+    const originalPrice = Number(product.price ?? product.originalPrice ?? 0);
+    const currentPrice = Number(product.currentPrice ?? product.price ?? 0);
+    const hasDiscount = originalPrice > currentPrice;
+    const discountPercent = hasDiscount
+      ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
+      : 0;
+
+    const formattedCurrentPrice = currentPrice.toLocaleString('vi-VN');
+    const formattedOriginalPrice = originalPrice.toLocaleString('vi-VN');
+
     return (
         <div className="detail-container">
             <button className="back-button" onClick={() => navigate(-1)}>
@@ -71,9 +81,13 @@ const DetailProduct = () => {
                 <div className="detail-info">
                     <h2>{product.name}</h2>
                     <p className="detail-price">
-                      <span className="current-price">{product.price?.toLocaleString('vi-VN')} đ</span>
-                        {product.originalPrice && ( <span className="original-price">{product.originalPrice}</span> )}
-                        {product.discount && <span className="discount">{product.discount}</span>}
+                      <span className="current-price">{formattedCurrentPrice} đ</span>
+                      {hasDiscount && (
+                        <>
+                          <span className="original-price">{formattedOriginalPrice} đ</span>
+                          <span className="discount">-{discountPercent}%</span>
+                        </>
+                      )}
                     </p>
 
                     <div className="detail-sizes">
