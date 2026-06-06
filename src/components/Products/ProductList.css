@@ -1,141 +1,76 @@
 .product-list-container {
   padding: 40px 20px;
-
-  background:
-    linear-gradient(
-      180deg,
-      #090F15 0%,
-      #11181F 100%
-    );
-
+  background: linear-gradient(180deg, #F3EFE0 0%, #E8E2D8 100%);
   min-height: 500px;
 }
 
 .product-list-layout {
   max-width: 1300px;
-
   margin: 0 auto;
-
   display: flex;
-
   align-items: flex-start;
-
   gap: 28px;
 }
 
 .product-list-sidebar {
   flex: 0 0 200px;
-
   position: sticky;
-
   top: 100px;
-
-  padding: 20px 18px;
-
-  background:
-    rgba(38,46,54,0.82);
-
-  border-radius: 12px;
-
-  border:
-    1px solid rgba(211,209,206,0.08);
-
-  box-shadow:
-    0 10px 26px rgba(0,0,0,0.24);
-
-  backdrop-filter: blur(12px);
+  padding: 22px 18px;
+  background: rgba(243, 239, 224, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(74, 59, 50, 0.12);
+  box-shadow: 0 16px 38px rgba(74, 59, 50, 0.12);
+  backdrop-filter: blur(16px);
 }
 
 .product-list-sidebar__title {
   margin: 0 0 14px;
-
   font-size: 1.05rem;
-
   font-weight: 700;
-
-  color: #D3D1CE;
+  color: #4A3B32;
 }
 
 .product-list-sidebar__list {
   list-style: none;
-
   margin: 0;
-
   padding: 0;
-
   display: flex;
-
   flex-direction: column;
-
-  gap: 8px;
+  gap: 10px;
 }
 
 .product-list-sidebar__btn {
   width: 100%;
-
   text-align: left;
-
-  padding: 10px 14px;
-
+  padding: 12px 14px;
   font-size: 0.95rem;
-
   font-weight: 500;
-
-  color: #B3B7BA;
-
-  background:
-    rgba(211,209,206,0.04);
-
-  border:
-    1px solid transparent;
-
-  border-radius: 8px;
-
+  color: #4A3B32;
+  background: rgba(205, 141, 123, 0.12);
+  border: 1px solid transparent;
+  border-radius: 10px;
   cursor: pointer;
-
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s,
-    transform 0.2s ease;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s ease;
 }
 
 .product-list-sidebar__btn:hover {
-  background:
-    rgba(211,209,206,0.08);
-
-  color: #D3D1CE;
-
-  border-color:
-    rgba(211,209,206,0.10);
-
+  background: rgba(205, 141, 123, 0.18);
+  color: #4A3B32;
+  border-color: rgba(205, 141, 123, 0.18);
   transform: translateX(2px);
 }
 
 .product-list-sidebar__btn--active {
-  background:
-    linear-gradient(
-      135deg,
-      #B3B7BA 0%,
-      #D3D1CE 100%
-    );
-
-  color: #090F15;
-
+  background: linear-gradient(135deg, #CD8D7B 0%, #B2B8A3 100%);
+  color: #4A3B32;
   border-color: transparent;
-
   font-weight: 700;
 }
 
 .product-list-sidebar__btn--active:hover {
-  background:
-    linear-gradient(
-      135deg,
-      #D3D1CE 0%,
-      #B3B7BA 100%
-    );
-
-  color: #090F15;
+  background: linear-gradient(135deg, #B2B8A3 0%, #CD8D7B 100%);
+  color: #4A3B32;
 }
 
 .product-list-main {
@@ -145,66 +80,50 @@
 
 .product-list-search-header {
   margin: 0 0 24px;
-  padding: 20px;
-  background: rgba(38, 46, 54, 0.82);
-  border-radius: 12px;
-  border: 1px solid rgba(211, 209, 206, 0.08);
-  backdrop-filter: blur(10px);
+  padding: 24px 22px;
+  background: rgba(243, 239, 224, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(74, 59, 50, 0.12);
+  backdrop-filter: blur(14px);
 }
 
 .product-list-search-header h2 {
   margin: 0 0 8px;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #D3D1CE;
+  color: #4A3B32;
 }
 
 .product-list-search-header h2 strong {
-  color: #B3B7BA;
+  color: #CD8D7B;
   font-style: italic;
 }
 
 .product-list-search-header p {
   margin: 0;
   font-size: 0.95rem;
-  color: #B3B7BA;
+  color: #4A3B32;
   font-weight: 500;
 }
 
 .product-list-empty {
   margin: 0;
-
   padding: 48px 20px;
-
   text-align: center;
-
   font-size: 1rem;
-
-  color: #B3B7BA;
-
-  background:
-    rgba(38,46,54,0.82);
-
-  border-radius: 12px;
-
-  border:
-    1px dashed rgba(211,209,206,0.16);
-
-  backdrop-filter: blur(10px);
+  color: #4A3B32;
+  background: rgba(243, 239, 224, 0.95);
+  border-radius: 16px;
+  border: 1px dashed rgba(74, 59, 50, 0.16);
+  backdrop-filter: blur(12px);
 }
 
 .product-list {
   max-width: none;
-
   margin: 0 auto;
-
   display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(300px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-
   align-items: stretch;
 }
 
@@ -238,6 +157,7 @@
 
   .product-list-container {
     padding: 20px 15px;
+}
   }
 }
 

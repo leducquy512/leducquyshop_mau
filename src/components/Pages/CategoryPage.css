@@ -1,0 +1,31 @@
+.category-page{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+}
+.category-hero h1{
+  font-size:2rem;
+  margin-bottom:6px;
+}
+.category-list{
+  margin-top:20px;
+  min-height:240px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.category-placeholder{
+  text-align:center;
+  background:var(--surface);
+  border:1px solid var(--surface-border);
+  padding:20px;
+  border-radius:12px;
+}
+.btn-primary{
+  background:var(--accent);
+  color:var(--button-text);
+  border:none;
+  padding:10px 16px;
+  border-radius:999px;
+  cursor:pointer;
+}

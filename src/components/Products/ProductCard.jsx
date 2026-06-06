@@ -12,37 +12,43 @@ const ProductCard = ({ product }) => {
 
   const originalPrice = Number(product.price ?? product.originalPrice ?? 0);
   const currentPrice = Number(product.currentPrice ?? product.price ?? 0);
-  const hasDiscount = originalPrice > currentPrice;
-  const discountPercent = hasDiscount
+  const computedDiscount = originalPrice > currentPrice
     ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
     : 0;
+  const discountPercent = Number.isFinite(Number(product.discount)) && Number(product.discount) > 0
+    ? Number(product.discount)
+    : computedDiscount;
+  const hasDiscount = discountPercent > 0;
 
   const formattedCurrentPrice = currentPrice.toLocaleString('vi-VN');
   const formattedOriginalPrice = originalPrice.toLocaleString('vi-VN');
 
-  const handleBuy = async () => {
-    setIsLoading(true);
+  const handleAddToCart = () => {
     setError(null);
     try {
-      const response = await fetch(productsUrl);
-      if (!response.ok) {
-        throw new Error('Không thể tải thông tin sản phẩm');
+      const savedCart = localStorage.getItem('cart');
+      const cart = savedCart ? JSON.parse(savedCart) : [];
+      const existingItemIndex = cart.findIndex(item => item.id === product.id);
+      if (existingItemIndex >= 0) {
+        cart[existingItemIndex].quantity += 1;
+      } else {
+        cart.push({
+          ...product,
+          quantity: 1
+        });
       }
-
-      const data = await response.json();
-      const matchedProduct = data.find((item) => item.id === product.id);
-      if (!matchedProduct) {
-        throw new Error('Sản phẩm không tồn tại');
-      }
-      navigate(`/product/${product.id}`, {
-        state: { product: { ...matchedProduct, image: product.image } }
-      });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      window.dispatchEvent(new Event('cartUpdated'));
     } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
+      setError('Không thêm được vào giỏ hàng');
     }
   };
+
+  const handleBuyNow = () => {
+    handleAddToCart();
+    navigate('/cart');
+  };
+
   return (
     <div className="product-card">
       <div className="product-image-container">
@@ -73,9 +79,14 @@ const ProductCard = ({ product }) => {
         <span className="sales">Đã bán {product.sold}</span>
       </div>
 
-      <button className="compare-button" onClick={handleBuy} disabled={isLoading}>
-        {isLoading ? 'Đang mở...' : 'Mua'}
-      </button>
+      <div className="product-actions">
+        <button className="buy-now-button" onClick={handleBuyNow}>
+          Mua ngay
+        </button>
+        <button className="compare-button" onClick={handleAddToCart}>
+          Thêm vào giỏ hàng
+        </button>
+      </div>
       {error && <div className="error-text">{error}</div>}
     </div>
   );

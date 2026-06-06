@@ -10,29 +10,33 @@ const emptyForm = () => ({
   role: '',
   name: '',
   gender: '',
-  birthdate: '',
   phone: '',
+  salary: '',
+  status: 'Hoạt động',
 });
 
 function rowToForm(e) {
   return {
     id: String(e.id),
-    role: e.role ?? '',
+    role: e.role ?? e.position ?? '',
     name: e.name ?? '',
     gender: e.gender ?? '',
-    birthdate: e.birthdate ?? '',
     phone: e.phone ?? '',
+    salary: e.salary != null ? String(e.salary) : '',
+    status: e.status ?? 'Hoạt động',
   };
 }
 
 function formToRow(form, nextId) {
   return {
     id: form.id ? Number(form.id) : nextId,
+    position: form.role.trim(),
     role: form.role.trim(),
     name: form.name.trim(),
     gender: form.gender.trim(),
-    birthdate: form.birthdate.trim(),
     phone: form.phone.trim(),
+    salary: Number(form.salary) || 0,
+    status: form.status.trim() || 'Hoạt động',
   };
 }
 
@@ -232,7 +236,8 @@ function AdminEmployee({ embedded = false }) {
                   <th>Vai trò</th>
                   <th>Tên</th>
                   <th>Giới tính</th>
-                  <th>Ngày sinh</th>
+                  <th>Salary</th>
+                  <th>Status</th>
                   <th>Điện thoại</th>
                   <th />
                 </tr>
@@ -240,7 +245,7 @@ function AdminEmployee({ embedded = false }) {
               <tbody>
                 {displayedRows.length === 0 ? (
                   <tr>
-                    <td colSpan={7} className="admin-table_empty">
+                    <td colSpan={8} className="admin-table_empty">
                       {appliedSearchId.trim()
                         ? `Không có nhân viên với ID "${appliedSearchId.trim()}".`
                         : 'Chưa có nhân viên.'}
@@ -250,10 +255,11 @@ function AdminEmployee({ embedded = false }) {
                   displayedRows.map((r) => (
                     <tr key={r.id}>
                       <td>{r.id}</td>
-                      <td>{r.position}</td>
+                      <td>{r.position ?? r.role}</td>
                       <td>{r.name}</td>
                       <td>{r.gender}</td>
-                      <td>{r.birthdate}</td>
+                      <td>{r.salary?.toLocaleString?.('vi-VN') ?? r.salary} đ</td>
+                      <td>{r.status}</td>
                       <td>{r.phone}</td>
                       <td>
                         <div className="admin-table_actions">
@@ -319,11 +325,19 @@ function AdminEmployee({ embedded = false }) {
               />
             </label>
             <label>
-              Ngày sinh
+              Salary
+              <input
+                type="number"
+                value={form.salary}
+                onChange={(e) => handleFormChange('salary', e.target.value)}
+              />
+            </label>
+            <label>
+              Status
               <input
                 type="text"
-                value={form.birthdate}
-                onChange={(e) => handleFormChange('birthdate', e.target.value)}
+                value={form.status}
+                onChange={(e) => handleFormChange('status', e.target.value)}
               />
             </label>
             <label>

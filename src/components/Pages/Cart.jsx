@@ -51,12 +51,11 @@ const Cart = () => {
     // --- PHẦN ĐÃ SỬA LẠI: Tính tổng tiền dựa trên thuộc tính item.price ---
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => {
-            const price = parseFloat(item.price) || 0;
+            const price = parseFloat(item.currentPrice ?? item.price) || 0;
             return total + (price * item.quantity);
         }, 0);
     };
 
-    // --- PHẦN ĐÃ SỬA LẠI: Hàm format tiền VND ---
     const formatPrice = (price) => {
         return new Intl.NumberFormat('vi-VN').format(price) + ' đ';
     };
@@ -81,9 +80,10 @@ const Cart = () => {
             <div className="cart-content">
                 <div className="cart-items">
                     {cartItems.map((item) => {
-                        // --- PHẦN ĐÃ SỬA LẠI: Tránh lỗi ép chuỗi và tính toán chính xác ---
-                        const price = parseFloat(item.price) || 0;
+                        const price = parseFloat(item.currentPrice ?? item.price) || 0;
+                        const originalPrice = parseFloat(item.price) || 0;
                         const itemTotal = price * item.quantity;
+                        const hasDiscount = originalPrice > price;
 
                         return (
                             <div key={item.id} className="cart-item">
@@ -95,8 +95,19 @@ const Cart = () => {
                                 </div>
                                 <div className="cart-item-info">
                                     <h3 className="cart-item-name">{item.name}</h3>
-                                    {/* --- PHẦN ĐÃ SỬA LẠI: Hiển thị giá sản phẩm hợp lệ --- */}
-                                    <p className="cart-item-price">{formatPrice(price)}</p>
+                                    <div className="cart-item-price-row">
+                                        <span className="cart-item-price">{formatPrice(price)}</span>
+                                        {hasDiscount && (
+                                            <>
+                                                <span className="cart-item-original-price">{formatPrice(originalPrice)}</span>
+                                                {item.discount && <span className="cart-item-discount">-{item.discount}%</span>}
+                                            </>
+                                        )}
+                                    </div>
+                                    <div className="cart-item-meta">
+                                        {item.rating != null && <span>⭐ {item.rating}</span>}
+                                        {item.sold != null && <span>Đã bán {item.sold}</span>}
+                                    </div>
                                 </div>
                                 <div className="cart-item-quantity">
                                     <button

@@ -5,8 +5,9 @@
     "position": "Quản lý cửa hàng",
     "phone": "0901111111",
     "gender": "Nam",
-    "birthdate": "1985-06-15",
-    "email": "minh.nguyen@shop.com"
+    "email": "minh.nguyen@shop.com",
+    "salary": 18000000,
+    "status": "Hoạt động"
   },
   {
     "id": 2,
@@ -14,8 +15,9 @@
     "position": "Nhân viên bán hàng",
     "phone": "0902222222",
     "gender": "Nữ",
-    "birthdate": "1990-03-20",
-    "email": "lan.tran@shop.com"
+    "email": "lan.tran@shop.com",
+    "salary": 9000000,
+    "status": "Hoạt động"
   },
   {
     "id": 3,
@@ -23,8 +25,9 @@
     "position": "Nhân viên kho",
     "phone": "0903333333",
     "gender": "Nam",
-    "birthdate": "1988-12-10",
-    "email": "phuc.le@shop.com"
+    "email": "phuc.le@shop.com",
+    "salary": 8500000,
+    "status": "Hoạt động"
   },
   {
     "id": 4,
@@ -32,8 +35,9 @@
     "position": "Chăm sóc khách hàng",
     "phone": "0904444444",
     "gender": "Nữ",
-    "birthdate": "1992-08-25",
-    "email": "trang.pham@shop.com"
+    "email": "trang.pham@shop.com",
+    "salary": 8000000,
+    "status": "Hoạt động"
   },
   {
     "id": 5,
@@ -41,8 +45,9 @@
     "position": "Nhân viên giao hàng",
     "phone": "0905555555",
     "gender": "Nam",
-    "birthdate": "1985-06-15",
-    "email": "quan.vo@shop.com"
+    "email": "quan.vo@shop.com",
+    "salary": 7500000,
+    "status": "Hoạt động"
   },
   {
     "id": 6,
@@ -50,8 +55,9 @@
     "position": "Nhân viên bán hàng",
     "phone": "0906666666",
     "gender": "Nam",
-    "birthdate": "1985-06-15",
-    "email": "hung.dang@shop.com"
+    "email": "hung.dang@shop.com",
+    "salary": 9000000,
+    "status": "Hoạt động"
   },
   {
     "id": 7,
@@ -59,8 +65,9 @@
     "position": "Nhân viên marketing",
     "phone": "0907777777",
     "gender": "Nữ",
-    "birthdate": "1990-03-20",
-    "email": "anh.bui@shop.com"
+    "email": "anh.bui@shop.com",
+    "salary": 8500000,
+    "status": "Hoạt động"
   },
   {
     "id": 8,
@@ -68,8 +75,9 @@
     "position": "Nhân viên thu ngân",
     "phone": "0908888888",
     "gender": "Nữ",
-    "birthdate": "1990-03-20",
-    "email": "mai.hoang@shop.com"
+    "email": "mai.hoang@shop.com",
+    "salary": 8000000,
+    "status": "Hoạt động"
   },
   {
     "id": 9,
@@ -77,8 +85,9 @@
     "position": "Nhân viên kho",
     "phone": "0909999999",
     "gender": "Nam",
-    "birthdate": "1985-06-15",
-    "email": "bao.phan@shop.com"
+    "email": "bao.phan@shop.com",
+    "salary": 8500000,
+    "status": "Hoạt động"
   },
   {
     "id": 10,
@@ -86,7 +95,8 @@
     "position": "Nhân viên bán hàng",
     "phone": "0910000000",
     "gender": "Nữ",
-    "birthdate": "1990-03-20",
-    "email": "hanh.ly@shop.com"
+    "email": "hanh.ly@shop.com",
+    "salary": 9000000,
+    "status": "Hoạt động"
   }
 ]

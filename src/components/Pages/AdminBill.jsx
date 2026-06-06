@@ -9,7 +9,13 @@ const STATUS_OPTIONS = [
   { value: 'delivered', label: 'Đã giao hàng' },
   { value: 'shipping', label: 'Vận chuyển' },
   { value: 'pending', label: 'Chưa giải quyết' },
-  { value: 'processing', label: 'Xử lý' },
+  { value: 'processing', label: 'Đang xử lý' },
+];
+
+const PAYMENT_METHOD_OPTIONS = [
+  { value: 'cash', label: 'Tiền mặt' },
+  { value: 'card', label: 'Thẻ' },
+  { value: 'momo', label: 'Ví điện tử' },
 ];
 
 const emptyForm = () => ({
@@ -19,36 +25,47 @@ const emptyForm = () => ({
   date: '',
   total: '',
   status: 'delivered',
+  paymentMethod: 'cash',
+  discount: '0',
+  note: '',
 });
 
 function rowToForm(b) {
   const d = String(b.date || '').slice(0, 10);
   return {
     id: String(b.id),
-    customer_id: b.customer_id !== null ? String(b.customer_id) : '',
-    employee_id: b.employee_id !== null ? String(b.employee_id) : '',
+    customer_id: b.customerId != null ? String(b.customerId) : b.customer_id != null ? String(b.customer_id) : '',
+    employee_id: b.employeeId != null ? String(b.employeeId) : b.employee_id != null ? String(b.employee_id) : '',
     date: d,
-    total: b.total !== null ? String(b.total) : '',
+    total: b.total != null ? String(b.total) : '',
     status: String(b.status || 'delivered').toLowerCase(),
+    paymentMethod: String(b.paymentMethod || b.payment_method || 'cash').toLowerCase(),
+    discount: b.discount != null ? String(b.discount) : '0',
+    note: String(b.note || ''),
   };
 }
 
 function formToRow(form, nextId) {
   return {
     id: form.id ? Number(form.id) : nextId,
-    customer_id: Number(form.customer_id),
-    employee_id: Number(form.employee_id),
+    customerId: Number(form.customer_id),
+    employeeId: Number(form.employee_id),
     date: form.date.trim(),
     total: Number(form.total),
     status: String(form.status || 'delivered').trim().toLowerCase(),
+    paymentMethod: String(form.paymentMethod || 'cash').trim().toLowerCase(),
+    discount: Number(form.discount) || 0,
+    note: String(form.note || '').trim(),
   };
 }
 
 function validateRow(built) {
-  if (!Number.isFinite(built.customer_id)) return 'customer_id phải là số';
-  if (!Number.isFinite(built.employee_id)) return 'employee_id phải là số';
+  if (!Number.isFinite(built.customerId)) return 'customerId phải là số';
+  if (!Number.isFinite(built.employeeId)) return 'employeeId phải là số';
   if (!Number.isFinite(built.total)) return 'total phải là số';
   if (!built.date) return 'Vui lòng chọn ngày';
+  if (!built.paymentMethod) return 'Vui lòng chọn phương thức thanh toán';
+  if (!Number.isFinite(built.discount)) return 'discount phải là số';
   return null;
 }
 
@@ -255,6 +272,9 @@ function AdminBill({ embedded = false }) {
                     <th>NV</th>
                     <th>Ngày</th>
                     <th>Tổng</th>
+                    <th>Thanh toán</th>
+                    <th>Giảm giá</th>
+                    <th>Ghi chú</th>
                     <th>Trạng thái</th>
                     <th />
                   </tr>
@@ -262,7 +282,7 @@ function AdminBill({ embedded = false }) {
                 <tbody>
                   {displayedRows.length === 0 ? (
                     <tr>
-                      <td colSpan={7} className="admin-table_empty">
+                      <td colSpan={10} className="admin-table_empty">
                         {appliedSearchId.trim()
                           ? `Không có hóa đơn với ID "${appliedSearchId.trim()}".`
                           : 'Chưa có hóa đơn.'}
@@ -272,10 +292,13 @@ function AdminBill({ embedded = false }) {
                     displayedRows.map((r) => (
                       <tr key={r.id}>
                         <td>{r.id}</td>
-                        <td>{r.customerId}</td>
-                        <td>{r.employeeId}</td>
+                        <td>{r.customerId ?? r.customer_id}</td>
+                        <td>{r.employeeId ?? r.employee_id}</td>
                         <td>{r.date}</td>
                         <td>{r.total}</td>
+                        <td>{r.paymentMethod || r.payment_method || 'cash'}</td>
+                        <td>{r.discount != null ? `${r.discount}%` : '0%'}</td>
+                        <td>{r.note || '-'}</td>
                         <td>{statusLabel(String(r.status || '').toLowerCase())}</td>
                         <td>
                           <div className="admin-table_actions">
@@ -306,10 +329,98 @@ function AdminBill({ embedded = false }) {
           </>
         ) : (
 
-        <form onSubmit={handleSubmitForm}>
+        <form onSubmit={handleSubmitForm} className="admin-form">
+          <div className="admin-form-grid">
+            <label>
+              ID
+              <input
+                type="text"
+                value={form.id}
+                onChange={(e) => handleFormChange('id', e.target.value)}
+                disabled={!isNew}
+              />
+            </label>
+            <label>
+              KH
+              <input
+                type="text"
+                value={form.customer_id}
+                onChange={(e) => handleFormChange('customer_id', e.target.value)}
+              />
+            </label>
+            <label>
+              NV
+              <input
+                type="text"
+                value={form.employee_id}
+                onChange={(e) => handleFormChange('employee_id', e.target.value)}
+              />
+            </label>
+            <label>
+              Ngày
+              <input
+                type="date"
+                value={form.date}
+                onChange={(e) => handleFormChange('date', e.target.value)}
+              />
+            </label>
+            <label>
+              Tổng
+              <input
+                type="number"
+                value={form.total}
+                onChange={(e) => handleFormChange('total', e.target.value)}
+                min="0"
+              />
+            </label>
+            <label>
+              Trạng thái
+              <select
+                value={form.status}
+                onChange={(e) => handleFormChange('status', e.target.value)}
+              >
+                {STATUS_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Phương thức
+              <select
+                value={form.paymentMethod}
+                onChange={(e) => handleFormChange('paymentMethod', e.target.value)}
+              >
+                {PAYMENT_METHOD_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Giảm giá (%)
+              <input
+                type="number"
+                value={form.discount}
+                onChange={(e) => handleFormChange('discount', e.target.value)}
+                min="0"
+              />
+            </label>
+            <label>
+              Ghi chú
+              <textarea
+                value={form.note}
+                onChange={(e) => handleFormChange('note', e.target.value)}
+              />
+            </label>
+          </div>
+          <div className="admin-form-actions">
             <button type="submit" disabled={saving}>Lưu</button>
             <button type="button" onClick={cancelForm} disabled={saving}>Hủy</button>
-          </form>
+          </div>
+        </form>
         )}
       </div>
     </>

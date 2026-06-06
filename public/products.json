@@ -6,7 +6,14 @@
     "price": 120000,
     "currentPrice": 99000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 18,
+    "rating": 3.9,
+    "sold": 53
   },
   {
     "id": 2,
@@ -15,7 +22,14 @@
     "price": 150000,
     "currentPrice": 129000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 4.0,
+    "sold": 76
   },
   {
     "id": 3,
@@ -24,7 +38,14 @@
     "price": 160000,
     "currentPrice": 139000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.2,
+    "sold": 99
   },
   {
     "id": 4,
@@ -33,7 +54,14 @@
     "price": 260000,
     "currentPrice": 220000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.3,
+    "sold": 122
   },
   {
     "id": 5,
@@ -42,7 +70,14 @@
     "price": 250000,
     "currentPrice": 210000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 16,
+    "rating": 4.4,
+    "sold": 145
   },
   {
     "id": 6,
@@ -51,7 +86,14 @@
     "price": 170000,
     "currentPrice": 145000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.5,
+    "sold": 168
   },
   {
     "id": 7,
@@ -60,7 +102,14 @@
     "price": 180000,
     "currentPrice": 150000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 17,
+    "rating": 4.6,
+    "sold": 191
   },
   {
     "id": 8,
@@ -69,7 +118,14 @@
     "price": 200000,
     "currentPrice": 169000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 16,
+    "rating": 4.8,
+    "sold": 214
   },
   {
     "id": 9,
@@ -78,7 +134,14 @@
     "price": 190000,
     "currentPrice": 159000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 16,
+    "rating": 4.9,
+    "sold": 237
   },
   {
     "id": 10,
@@ -87,7 +150,14 @@
     "price": 210000,
     "currentPrice": 179000,
     "idcategory": 1,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 5.0,
+    "sold": 260
   },
   {
     "id": 11,
@@ -96,7 +166,14 @@
     "price": 220000,
     "currentPrice": 189000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 5.0,
+    "sold": 283
   },
   {
     "id": 12,
@@ -105,7 +182,14 @@
     "price": 230000,
     "currentPrice": 199000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 3.8,
+    "sold": 306
   },
   {
     "id": 13,
@@ -114,7 +198,14 @@
     "price": 240000,
     "currentPrice": 209000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 3.9,
+    "sold": 329
   },
   {
     "id": 14,
@@ -123,7 +214,14 @@
     "price": 280000,
     "currentPrice": 249000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.0,
+    "sold": 352
   },
   {
     "id": 15,
@@ -132,7 +230,14 @@
     "price": 210000,
     "currentPrice": 179000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.2,
+    "sold": 375
   },
   {
     "id": 16,
@@ -141,7 +246,14 @@
     "price": 260000,
     "currentPrice": 229000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.3,
+    "sold": 398
   },
   {
     "id": 17,
@@ -150,7 +262,14 @@
     "price": 270000,
     "currentPrice": 239000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.4,
+    "sold": 421
   },
   {
     "id": 18,
@@ -159,7 +278,14 @@
     "price": 235000,
     "currentPrice": 195000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 17,
+    "rating": 4.5,
+    "sold": 444
   },
   {
     "id": 19,
@@ -168,7 +294,14 @@
     "price": 245000,
     "currentPrice": 205000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 16,
+    "rating": 4.6,
+    "sold": 46
   },
   {
     "id": 20,
@@ -177,7 +310,14 @@
     "price": 290000,
     "currentPrice": 259000,
     "idcategory": 2,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.8,
+    "sold": 69
   },
   {
     "id": 21,
@@ -186,7 +326,14 @@
     "price": 350000,
     "currentPrice": 299000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.9,
+    "sold": 92
   },
   {
     "id": 22,
@@ -195,7 +342,14 @@
     "price": 340000,
     "currentPrice": 289000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 5.0,
+    "sold": 115
   },
   {
     "id": 23,
@@ -204,7 +358,14 @@
     "price": 360000,
     "currentPrice": 319000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 138
   },
   {
     "id": 24,
@@ -213,7 +374,14 @@
     "price": 210000,
     "currentPrice": 179000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 3.8,
+    "sold": 161
   },
   {
     "id": 25,
@@ -222,7 +390,14 @@
     "price": 320000,
     "currentPrice": 279000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 3.9,
+    "sold": 184
   },
   {
     "id": 26,
@@ -231,7 +406,14 @@
     "price": 310000,
     "currentPrice": 269000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.0,
+    "sold": 207
   },
   {
     "id": 27,
@@ -240,7 +422,14 @@
     "price": 290000,
     "currentPrice": 249000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 4.2,
+    "sold": 230
   },
   {
     "id": 28,
@@ -249,7 +438,14 @@
     "price": 270000,
     "currentPrice": 229000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.3,
+    "sold": 253
   },
   {
     "id": 29,
@@ -258,7 +454,14 @@
     "price": 310000,
     "currentPrice": 269000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.4,
+    "sold": 276
   },
   {
     "id": 30,
@@ -267,7 +470,14 @@
     "price": 330000,
     "currentPrice": 289000,
     "idcategory": 3,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.5,
+    "sold": 299
   },
   {
     "id": 31,
@@ -276,7 +486,14 @@
     "price": 320000,
     "currentPrice": 279000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.6,
+    "sold": 322
   },
   {
     "id": 32,
@@ -285,7 +502,14 @@
     "price": 350000,
     "currentPrice": 299000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 4.8,
+    "sold": 345
   },
   {
     "id": 33,
@@ -294,7 +518,14 @@
     "price": 330000,
     "currentPrice": 289000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.9,
+    "sold": 368
   },
   {
     "id": 34,
@@ -303,7 +534,14 @@
     "price": 450000,
     "currentPrice": 399000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 391
   },
   {
     "id": 35,
@@ -312,7 +550,14 @@
     "price": 280000,
     "currentPrice": 249000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 414
   },
   {
     "id": 36,
@@ -321,7 +566,14 @@
     "price": 420000,
     "currentPrice": 379000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.8,
+    "sold": 437
   },
   {
     "id": 37,
@@ -330,7 +582,14 @@
     "price": 390000,
     "currentPrice": 349000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 3.9,
+    "sold": 39
   },
   {
     "id": 38,
@@ -339,7 +598,14 @@
     "price": 290000,
     "currentPrice": 249000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 4.0,
+    "sold": 62
   },
   {
     "id": 39,
@@ -348,7 +614,14 @@
     "price": 310000,
     "currentPrice": 269000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.2,
+    "sold": 85
   },
   {
     "id": 40,
@@ -357,7 +630,14 @@
     "price": 370000,
     "currentPrice": 329000,
     "idcategory": 4,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.3,
+    "sold": 108
   },
   {
     "id": 41,
@@ -366,7 +646,14 @@
     "price": 410000,
     "currentPrice": 369000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.4,
+    "sold": 131
   },
   {
     "id": 42,
@@ -375,7 +662,14 @@
     "price": 320000,
     "currentPrice": 279000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.5,
+    "sold": 154
   },
   {
     "id": 43,
@@ -384,7 +678,14 @@
     "price": 480000,
     "currentPrice": 429000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.6,
+    "sold": 177
   },
   {
     "id": 44,
@@ -393,7 +694,14 @@
     "price": 520000,
     "currentPrice": 469000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.8,
+    "sold": 200
   },
   {
     "id": 45,
@@ -402,7 +710,14 @@
     "price": 410000,
     "currentPrice": 369000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.9,
+    "sold": 223
   },
   {
     "id": 46,
@@ -411,7 +726,14 @@
     "price": 430000,
     "currentPrice": 389000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 5.0,
+    "sold": 246
   },
   {
     "id": 47,
@@ -420,7 +742,14 @@
     "price": 600000,
     "currentPrice": 539000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 5.0,
+    "sold": 269
   },
   {
     "id": 48,
@@ -429,7 +758,14 @@
     "price": 360000,
     "currentPrice": 319000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 3.8,
+    "sold": 292
   },
   {
     "id": 49,
@@ -438,7 +774,14 @@
     "price": 520000,
     "currentPrice": 469000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.9,
+    "sold": 315
   },
   {
     "id": 50,
@@ -447,7 +790,14 @@
     "price": 610000,
     "currentPrice": 549000,
     "idcategory": 5,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.0,
+    "sold": 338
   },
   {
     "id": 51,
@@ -456,7 +806,14 @@
     "price": 650000,
     "currentPrice": 589000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.2,
+    "sold": 361
   },
   {
     "id": 52,
@@ -465,7 +822,14 @@
     "price": 550000,
     "currentPrice": 499000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.3,
+    "sold": 384
   },
   {
     "id": 53,
@@ -474,7 +838,14 @@
     "price": 560000,
     "currentPrice": 499000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.4,
+    "sold": 407
   },
   {
     "id": 54,
@@ -483,7 +854,14 @@
     "price": 620000,
     "currentPrice": 559000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.5,
+    "sold": 430
   },
   {
     "id": 55,
@@ -492,7 +870,14 @@
     "price": 640000,
     "currentPrice": 579000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.6,
+    "sold": 32
   },
   {
     "id": 56,
@@ -501,7 +886,14 @@
     "price": 450000,
     "currentPrice": 399000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.8,
+    "sold": 55
   },
   {
     "id": 57,
@@ -510,7 +902,14 @@
     "price": 480000,
     "currentPrice": 429000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.9,
+    "sold": 78
   },
   {
     "id": 58,
@@ -519,7 +918,14 @@
     "price": 300000,
     "currentPrice": 269000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 5.0,
+    "sold": 101
   },
   {
     "id": 59,
@@ -528,7 +934,14 @@
     "price": 180000,
     "currentPrice": 149000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 17,
+    "rating": 5.0,
+    "sold": 124
   },
   {
     "id": 60,
@@ -537,7 +950,14 @@
     "price": 630000,
     "currentPrice": 569000,
     "idcategory": 6,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.8,
+    "sold": 147
   },
   {
     "id": 61,
@@ -546,7 +966,14 @@
     "price": 620000,
     "currentPrice": 559000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.9,
+    "sold": 170
   },
   {
     "id": 62,
@@ -555,7 +982,14 @@
     "price": 650000,
     "currentPrice": 589000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.0,
+    "sold": 193
   },
   {
     "id": 63,
@@ -564,7 +998,14 @@
     "price": 540000,
     "currentPrice": 489000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.2,
+    "sold": 216
   },
   {
     "id": 64,
@@ -573,7 +1014,14 @@
     "price": 560000,
     "currentPrice": 499000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.3,
+    "sold": 239
   },
   {
     "id": 65,
@@ -582,7 +1030,14 @@
     "price": 900000,
     "currentPrice": 799000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.4,
+    "sold": 262
   },
   {
     "id": 66,
@@ -591,7 +1046,14 @@
     "price": 350000,
     "currentPrice": 319000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.5,
+    "sold": 285
   },
   {
     "id": 67,
@@ -600,7 +1062,14 @@
     "price": 420000,
     "currentPrice": 379000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.6,
+    "sold": 308
   },
   {
     "id": 68,
@@ -609,7 +1078,14 @@
     "price": 310000,
     "currentPrice": 279000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.8,
+    "sold": 331
   },
   {
     "id": 69,
@@ -618,7 +1094,14 @@
     "price": 260000,
     "currentPrice": 229000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.9,
+    "sold": 354
   },
   {
     "id": 70,
@@ -627,7 +1110,14 @@
     "price": 390000,
     "currentPrice": 349000,
     "idcategory": 7,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 377
   },
   {
     "id": 71,
@@ -636,7 +1126,14 @@
     "price": 450000,
     "currentPrice": 399000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 400
   },
   {
     "id": 72,
@@ -645,7 +1142,14 @@
     "price": 280000,
     "currentPrice": 249000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 3.8,
+    "sold": 423
   },
   {
     "id": 73,
@@ -654,7 +1158,14 @@
     "price": 240000,
     "currentPrice": 209000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 3.9,
+    "sold": 446
   },
   {
     "id": 74,
@@ -663,7 +1174,14 @@
     "price": 520000,
     "currentPrice": 469000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.0,
+    "sold": 48
   },
   {
     "id": 75,
@@ -672,7 +1190,14 @@
     "price": 300000,
     "currentPrice": 269000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.2,
+    "sold": 71
   },
   {
     "id": 76,
@@ -681,7 +1206,14 @@
     "price": 340000,
     "currentPrice": 299000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.3,
+    "sold": 94
   },
   {
     "id": 77,
@@ -690,7 +1222,14 @@
     "price": 750000,
     "currentPrice": 679000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 9,
+    "rating": 4.4,
+    "sold": 117
   },
   {
     "id": 78,
@@ -699,7 +1238,14 @@
     "price": 220000,
     "currentPrice": 189000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 4.5,
+    "sold": 140
   },
   {
     "id": 79,
@@ -708,7 +1254,14 @@
     "price": 200000,
     "currentPrice": 179000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.6,
+    "sold": 163
   },
   {
     "id": 80,
@@ -717,7 +1270,14 @@
     "price": 230000,
     "currentPrice": 199000,
     "idcategory": 8,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.8,
+    "sold": 186
   },
   {
     "id": 81,
@@ -726,7 +1286,14 @@
     "price": 210000,
     "currentPrice": 189000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.9,
+    "sold": 209
   },
   {
     "id": 82,
@@ -735,7 +1302,14 @@
     "price": 260000,
     "currentPrice": 229000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 5.0,
+    "sold": 232
   },
   {
     "id": 83,
@@ -744,7 +1318,14 @@
     "price": 190000,
     "currentPrice": 169000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 5.0,
+    "sold": 255
   },
   {
     "id": 84,
@@ -753,7 +1334,14 @@
     "price": 210000,
     "currentPrice": 189000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.8,
+    "sold": 278
   },
   {
     "id": 85,
@@ -762,7 +1350,14 @@
     "price": 200000,
     "currentPrice": 179000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 3.9,
+    "sold": 301
   },
   {
     "id": 86,
@@ -771,7 +1366,14 @@
     "price": 260000,
     "currentPrice": 229000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.0,
+    "sold": 324
   },
   {
     "id": 87,
@@ -780,7 +1382,14 @@
     "price": 270000,
     "currentPrice": 239000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.2,
+    "sold": 347
   },
   {
     "id": 88,
@@ -789,7 +1398,14 @@
     "price": 290000,
     "currentPrice": 259000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.3,
+    "sold": 370
   },
   {
     "id": 89,
@@ -798,7 +1414,14 @@
     "price": 250000,
     "currentPrice": 219000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.4,
+    "sold": 393
   },
   {
     "id": 90,
@@ -807,7 +1430,14 @@
     "price": 270000,
     "currentPrice": 239000,
     "idcategory": 9,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.5,
+    "sold": 416
   },
   {
     "id": 91,
@@ -816,7 +1446,14 @@
     "price": 260000,
     "currentPrice": 229000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.6,
+    "sold": 439
   },
   {
     "id": 92,
@@ -825,7 +1462,14 @@
     "price": 300000,
     "currentPrice": 269000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.8,
+    "sold": 41
   },
   {
     "id": 93,
@@ -834,7 +1478,14 @@
     "price": 280000,
     "currentPrice": 249000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 4.9,
+    "sold": 64
   },
   {
     "id": 94,
@@ -843,7 +1494,14 @@
     "price": 150000,
     "currentPrice": 129000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 14,
+    "rating": 5.0,
+    "sold": 87
   },
   {
     "id": 95,
@@ -852,7 +1510,14 @@
     "price": 170000,
     "currentPrice": 149000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 5.0,
+    "sold": 110
   },
   {
     "id": 96,
@@ -861,7 +1526,14 @@
     "price": 140000,
     "currentPrice": 119000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 15,
+    "rating": 3.8,
+    "sold": 133
   },
   {
     "id": 97,
@@ -870,7 +1542,14 @@
     "price": 190000,
     "currentPrice": 169000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 11,
+    "rating": 3.9,
+    "sold": 156
   },
   {
     "id": 98,
@@ -879,7 +1558,14 @@
     "price": 160000,
     "currentPrice": 139000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 13,
+    "rating": 4.0,
+    "sold": 179
   },
   {
     "id": 99,
@@ -888,7 +1574,14 @@
     "price": 180000,
     "currentPrice": 159000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 12,
+    "rating": 4.2,
+    "sold": 202
   },
   {
     "id": 100,
@@ -897,6 +1590,13 @@
     "price": 210000,
     "currentPrice": 189000,
     "idcategory": 10,
-    "sizes": ["S", "M", "L"]
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "discount": 10,
+    "rating": 4.3,
+    "sold": 225
   }
 ]

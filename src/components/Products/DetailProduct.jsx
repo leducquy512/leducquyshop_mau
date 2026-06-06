@@ -54,15 +54,12 @@ const DetailProduct = () => {
         return null;
     }
 
-    const originalPrice = Number(product.price ?? product.originalPrice ?? 0);
     const currentPrice = Number(product.currentPrice ?? product.price ?? 0);
-    const hasDiscount = originalPrice > currentPrice;
-    const discountPercent = hasDiscount
-      ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
-      : 0;
-
-    const formattedCurrentPrice = currentPrice.toLocaleString('vi-VN');
-    const formattedOriginalPrice = originalPrice.toLocaleString('vi-VN');
+    const originalPrice = Number(product.price ?? product.originalPrice ?? 0);
+    const discountPercent = originalPrice > currentPrice
+        ? Math.round(((originalPrice - currentPrice) / originalPrice) * 100)
+        : Number(product.discount) || 0;
+    const hasDiscount = discountPercent > 0 && originalPrice > currentPrice;
 
     return (
         <div className="detail-container">
@@ -81,19 +78,19 @@ const DetailProduct = () => {
                 <div className="detail-info">
                     <h2>{product.name}</h2>
                     <p className="detail-price">
-                      <span className="current-price">{formattedCurrentPrice} đ</span>
-                      {hasDiscount && (
-                        <>
-                          <span className="original-price">{formattedOriginalPrice} đ</span>
-                          <span className="discount">-{discountPercent}%</span>
-                        </>
-                      )}
+                        <span className="current-price">{currentPrice.toLocaleString('vi-VN')} đ</span>
+                        {hasDiscount && (
+                            <>
+                                <span className="original-price">{originalPrice.toLocaleString('vi-VN')} đ</span>
+                                <span className="discount">-{discountPercent}%</span>
+                            </>
+                        )}
                     </p>
 
-                    <div className="detail-sizes">
-                        <button className="ram-ssd-tag">{product.sizeS}</button>
-                        <button className="ram-ssd-tag">{product.sizeM}</button>
-                        <button className="ram-ssd-tag">{product.sizeL}</button>
+                    <div className="product-ram-ssd">
+                    {product.sizes?.includes('S') && <button className="ram-ssd-tag">S</button>}
+                    {product.sizes?.includes('M') && <button className="ram-ssd-tag">M</button>}
+                    {product.sizes?.includes('L') && <button className="ram-ssd-tag">L</button>}
                     </div>
 
                     <div className="detail-meta">
@@ -119,7 +116,10 @@ const DetailProduct = () => {
 
                         navigate('/cart');
                     }}>
-                        Mua ngay
+                        Thêm vào giỏ hàng
+                    </button>
+                    <button className="go-cart-button" onClick={() => navigate('/cart')}>
+                        Xem giỏ hàng
                     </button>
                 </div>
             </div>

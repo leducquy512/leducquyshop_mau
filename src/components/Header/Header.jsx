@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
-import logoImage from '../../img/logo.png'; // Giữ nguyên đường dẫn logo của bạn
+import logoImage from '/src/img/logo.png';
 import { imageMap } from '../../utils/ProductImages';
 
 const jsonBase = import.meta.env.BASE_URL || '/';
 
 const Header = () => {
-    const [hoveredMenu, setHoveredMenu] = useState(null);
     const [cartCount, setCartCount] = useState(0);
     const [currentUser, setCurrentUser] = useState(null);
     
@@ -156,11 +155,7 @@ const Header = () => {
 
     const userLabel = currentUser ? (currentUser.name || currentUser.user) : 'Đăng nhập';
 
-    const coffeeMenuItems = [
-        { text: 'Hành trình tách cà phê đậm', href: '/coffee/hanh-trinh-tach-ca-phe' },
-        { text: 'Hạt cà phê Phúc Long', href: '/coffee/hat-ca-phe-phuc-long' },
-        { text: 'Nghệ thuật pha chế', href: '/coffee/nghe-thuat-pha-che' }
-    ];
+ 
 
     return (
         <header className="phuclong-header">
@@ -171,7 +166,7 @@ const Header = () => {
                     <div className="header-delivery-info">
                         <span className="delivery-text">Free Delivery</span>
                         <i className="fas fa-phone delivery-icon"></i>
-                        <span className="delivery-phone">1800 6779</span>
+                        <span className="delivery-phone">0703514987</span>
                         <div className="delivery-scooter">
                             <i className="fas fa-motorcycle"></i>
                         </div>
@@ -345,29 +340,6 @@ const Header = () => {
                 <div className="nav-content">
                     <a href="/" className="nav-link">TRANG CHỦ</a>
 
-                    {/* CÀ PHÊ với Dropdown */}
-                    <div
-                        className="nav-item-with-dropdown"
-                        onMouseEnter={() => setHoveredMenu('coffee')}
-                        onMouseLeave={() => setHoveredMenu(null)}
-                    >
-                        <a href="/coffee" className={`nav-link ${hoveredMenu === 'coffee' ? 'active' : ''}`}>
-                            CÀ PHÊ
-                        </a>
-                        {hoveredMenu === 'coffee' && (
-                            <div className="dropdown-menu">
-                                {coffeeMenuItems.map((item, index) => (
-                                    <a
-                                        key={index}
-                                        href={item.href}
-                                        className="dropdown-item"
-                                    >
-                                        {item.text}
-                                    </a>
-                                ))}
-                            </div>
-                        )}
-                    </div>
                     {/* Toàn bộ menu gốc của bạn được giữ lại nguyên vẹn */}
                     <a href="/tat-ca-san-pham" className="nav-link">SẢN PHẨM</a>
                     <a href="/ao" className="nav-link">ÁO</a>
